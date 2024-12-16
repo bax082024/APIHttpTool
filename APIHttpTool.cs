@@ -1,6 +1,8 @@
+using System;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 
 
@@ -13,34 +15,7 @@ namespace APIHttpTool
             InitializeComponent();
         }
 
-        private void btnSendGet1_Click(object sender, EventArgs e)
-        {
-            string url = txtApiUrl1.Text;
-
-            if (string.IsNullOrWhiteSpace(url))
-            {
-                rtbResponse1.Text = "Please enter a valid URL.";
-                return;
-            }
-
-            try
-            {
-                using (HttpClient client = new HttpClient())
-                {
-                    rtbResponse1.Text = $"Sending GET request to {url}...\n";
-                    HttpResponseMessage response = await client.GetAsync(url);
-
-                    string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponse1.Text = responseBody;
-                }
-            }
-            catch (Exception ex)
-            {
-                rtbResponse1.Text = $"Error: {ex.Message}";
-            }
-        }
-
-        private void btnSendGet2_Click(object sender, EventArgs e)
+        private async void btnSendPost_Click(object sender, EventArgs e)
         {
             string url = txtApiUrlPost.Text;
 
@@ -70,14 +45,91 @@ namespace APIHttpTool
             }
         }
 
-        private void btnSendGet3_Click(object sender, EventArgs e)
-        {
 
+        private async void btnSendPut_Click(object sender, EventArgs e)
+        {
+            string url = txtApiUrlPut.Text;
+
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                rtbResponsePut.Text = "Please enter a valid URL.";
+                return;
+            }
+
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    // Example payload
+                    var data = new StringContent("{ \"key\": \"updated value\" }", Encoding.UTF8, "application/json");
+
+                    rtbResponsePut.Text = $"Sending PUT request to {url}...\n";
+                    HttpResponseMessage response = await client.PutAsync(url, data);
+
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    rtbResponsePut.Text = responseBody;
+                }
+            }
+            catch (Exception ex)
+            {
+                rtbResponsePut.Text = $"Error: {ex.Message}";
+            }
         }
 
-        private void btnSendGet4_Click(object sender, EventArgs e)
-        {
 
+        private async void btnSendDelete_Click(object sender, EventArgs e)
+        {
+            string url = txtApiUrlDelete.Text;
+
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                rtbResponseDelete.Text = "Please enter a valid URL.";
+                return;
+            }
+
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    rtbResponseDelete.Text = $"Sending DELETE request to {url}...\n";
+                    HttpResponseMessage response = await client.DeleteAsync(url);
+
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    rtbResponseDelete.Text = responseBody;
+                }
+            }
+            catch (Exception ex)
+            {
+                rtbResponseDelete.Text = $"Error: {ex.Message}";
+            }
+        }
+
+
+        private void btnSendGet1_Click(object sender, EventArgs e)
+        {
+            string url = txtApiUrlGet.Text;
+
+            if (string.IsNullOrWhiteSpace(url))
+            {
+                rtbResponseGet.Text = "Please enter a valid URL.";
+                return;
+            }
+
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    rtbResponseGet.Text = $"Sending GET request to {url}...\n";
+                    HttpResponseMessage response = await client.GetAsync(url);
+
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    rtbResponseGet.Text = responseBody;
+                }
+            }
+            catch (Exception ex)
+            {
+                rtbResponseGet.Text = $"Error: {ex.Message}";
+            }
         }
     }
 }
