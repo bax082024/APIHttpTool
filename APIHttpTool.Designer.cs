@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(APIHttpTool));
             label1 = new Label();
             txtApiUrl1 = new TextBox();
             btnSendGet = new Button();
@@ -44,6 +46,9 @@
             label3 = new Label();
             txtApiUrlDelete = new TextBox();
             label4 = new Label();
+            imageList1 = new ImageList(components);
+            button2 = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -202,12 +207,41 @@
             label4.TabIndex = 14;
             label4.Text = "API URL :";
             // 
+            // imageList1
+            // 
+            imageList1.ColorDepth = ColorDepth.Depth32Bit;
+            imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+            imageList1.TransparentColor = Color.Transparent;
+            imageList1.Images.SetKeyName(0, "refresh");
+            // 
+            // button2
+            // 
+            button2.ImageIndex = 0;
+            button2.ImageList = imageList1;
+            button2.Location = new Point(327, 388);
+            button2.Name = "button2";
+            button2.Size = new Size(43, 37);
+            button2.TabIndex = 17;
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            button1.ImageIndex = 0;
+            button1.ImageList = imageList1;
+            button1.Location = new Point(328, 234);
+            button1.Name = "button1";
+            button1.Size = new Size(43, 37);
+            button1.TabIndex = 18;
+            button1.UseVisualStyleBackColor = true;
+            // 
             // APIHttpTool
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(968, 680);
+            Controls.Add(button1);
+            Controls.Add(button2);
             Controls.Add(txtApiUrlDelete);
             Controls.Add(label4);
             Controls.Add(txtApiUrlPut);
@@ -226,6 +260,7 @@
             Controls.Add(label1);
             Name = "APIHttpTool";
             Text = "API Http Tool";
+            Load += APIHttpTool_Load_1;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -248,5 +283,8 @@
         private Label label3;
         private TextBox txtApiUrlDelete;
         private Label label4;
+        private ImageList imageList1;
+        private Button button2;
+        private Button button1;
     }
 }

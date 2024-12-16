@@ -15,3 +15,4 @@ C:\HjemmeKode\C-Sharp\MyProjects\APIHttpTool\obj\Debug\net8.0-windows\refint\API
 C:\HjemmeKode\C-Sharp\MyProjects\APIHttpTool\obj\Debug\net8.0-windows\APIHttpTool.pdb
 C:\HjemmeKode\C-Sharp\MyProjects\APIHttpTool\obj\Debug\net8.0-windows\APIHttpTool.genruntimeconfig.cache
 C:\HjemmeKode\C-Sharp\MyProjects\APIHttpTool\obj\Debug\net8.0-windows\ref\APIHttpTool.dll
+C:\HjemmeKode\C-Sharp\MyProjects\APIHttpTool\obj\Debug\net8.0-windows\APIHttpTool.Properties.Resources.resources

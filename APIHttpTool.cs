@@ -151,5 +151,27 @@ namespace APIHttpTool
                 e.Graphics.FillRectangle(brush, gradientRectangle);
             }
         }
+
+       
+
+        private void APIHttpTool_Load_1(object sender, EventArgs e)
+        {
+            // GET Example URL
+            txtApiUrl1.Text = "https://jsonplaceholder.typicode.com/posts/1";
+            rtbResponse1.Text = "Click 'Send GET Request' to fetch data.";
+
+            // POST Example URL and Payload
+            txtApiUrlPost.Text = "https://jsonplaceholder.typicode.com/posts";
+            rtbResponsePost.Text = "{\n  \"title\": \"foo\",\n  \"body\": \"bar\",\n  \"userId\": 1\n}";
+
+            // PUT Example URL and Payload
+            txtApiUrlPut.Text = "https://jsonplaceholder.typicode.com/posts/1";
+            rtbResponsePut.Text = "{\n  \"id\": 1,\n  \"title\": \"updated title\",\n  \"body\": \"updated body\",\n  \"userId\": 1\n}";
+
+            // DELETE Example URL
+            txtApiUrlDelete.Text = "https://jsonplaceholder.typicode.com/posts/1";
+            rtbResponseDelete.Text = "Click 'Send DELETE Request' to delete data.";
+        }
+
     }
 }
