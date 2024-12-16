@@ -28,12 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            txtApiUrl = new TextBox();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(45, 24);
+            label1.Name = "label1";
+            label1.Size = new Size(55, 15);
+            label1.TabIndex = 0;
+            label1.Text = "API URL :";
+            // 
+            // txtApiUrl
+            // 
+            txtApiUrl.Location = new Point(12, 42);
+            txtApiUrl.Name = "txtApiUrl";
+            txtApiUrl.Size = new Size(123, 23);
+            txtApiUrl.TabIndex = 1;
+            // 
+            // APIHttpTool
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(txtApiUrl);
+            Controls.Add(label1);
+            Name = "APIHttpTool";
+            Text = "API Http Tool";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private TextBox txtApiUrl;
     }
 }
