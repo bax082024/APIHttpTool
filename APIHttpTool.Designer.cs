@@ -274,9 +274,9 @@
             lblStatusCodeDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblStatusCodeDelete.Location = new Point(377, 544);
             lblStatusCodeDelete.Name = "lblStatusCodeDelete";
-            lblStatusCodeDelete.Size = new Size(40, 15);
+            lblStatusCodeDelete.Size = new Size(98, 15);
             lblStatusCodeDelete.TabIndex = 21;
-            lblStatusCodeDelete.Text = "label5";
+            lblStatusCodeDelete.Text = "Status: Not Sent";
             // 
             // lblStatusCodePut
             // 
@@ -284,9 +284,9 @@
             lblStatusCodePut.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblStatusCodePut.Location = new Point(377, 367);
             lblStatusCodePut.Name = "lblStatusCodePut";
-            lblStatusCodePut.Size = new Size(40, 15);
+            lblStatusCodePut.Size = new Size(98, 15);
             lblStatusCodePut.TabIndex = 22;
-            lblStatusCodePut.Text = "label6";
+            lblStatusCodePut.Text = "Status: Not Sent";
             // 
             // lblStatusCodePost
             // 
@@ -294,9 +294,9 @@
             lblStatusCodePost.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblStatusCodePost.Location = new Point(377, 193);
             lblStatusCodePost.Name = "lblStatusCodePost";
-            lblStatusCodePost.Size = new Size(40, 15);
+            lblStatusCodePost.Size = new Size(98, 15);
             lblStatusCodePost.TabIndex = 23;
-            lblStatusCodePost.Text = "label7";
+            lblStatusCodePost.Text = "Status: Not Sent";
             // 
             // lblStatusCodeGet
             // 
@@ -304,9 +304,9 @@
             lblStatusCodeGet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblStatusCodeGet.Location = new Point(377, 20);
             lblStatusCodeGet.Name = "lblStatusCodeGet";
-            lblStatusCodeGet.Size = new Size(40, 15);
+            lblStatusCodeGet.Size = new Size(98, 15);
             lblStatusCodeGet.TabIndex = 24;
-            lblStatusCodeGet.Text = "label8";
+            lblStatusCodeGet.Text = "Status: Not Sent";
             // 
             // APIHttpTool
             // 
