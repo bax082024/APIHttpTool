@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIHttpTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e92950d733b913ba4144c91566abac16d6f58535")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+096c5ee32790749394d167d81d4e288d0674e5fc")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIHttpTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIHttpTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
