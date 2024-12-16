@@ -30,14 +30,14 @@
         {
             label1 = new Label();
             txtApiUrl1 = new TextBox();
-            rtbResponse = new Button();
-            rtbLogs = new RichTextBox();
-            richTextBox1 = new RichTextBox();
-            richTextBox2 = new RichTextBox();
-            richTextBox3 = new RichTextBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btnSendGet1 = new Button();
+            rtbResponse1 = new RichTextBox();
+            rtbResponse2 = new RichTextBox();
+            rtbResponse3 = new RichTextBox();
+            rtbResponse4 = new RichTextBox();
+            btnSendGet2 = new Button();
+            btnSendGet3 = new Button();
+            btnSendGet4 = new Button();
             txtApiUrl2 = new TextBox();
             label2 = new Label();
             txtApiUrl3 = new TextBox();
@@ -62,73 +62,73 @@
             txtApiUrl1.Size = new Size(309, 23);
             txtApiUrl1.TabIndex = 1;
             // 
-            // rtbResponse
+            // btnSendGet1
             // 
-            rtbResponse.Location = new Point(12, 86);
-            rtbResponse.Name = "rtbResponse";
-            rtbResponse.Size = new Size(309, 35);
-            rtbResponse.TabIndex = 2;
-            rtbResponse.Text = "Send Get Request";
-            rtbResponse.UseVisualStyleBackColor = true;
+            btnSendGet1.Location = new Point(12, 86);
+            btnSendGet1.Name = "btnSendGet1";
+            btnSendGet1.Size = new Size(309, 35);
+            btnSendGet1.TabIndex = 2;
+            btnSendGet1.Text = "Send GET Request";
+            btnSendGet1.UseVisualStyleBackColor = true;
             // 
-            // rtbLogs
+            // rtbResponse1
             // 
-            rtbLogs.Location = new Point(377, 24);
-            rtbLogs.Name = "rtbLogs";
-            rtbLogs.Size = new Size(484, 142);
-            rtbLogs.TabIndex = 3;
-            rtbLogs.Text = "";
+            rtbResponse1.Location = new Point(377, 24);
+            rtbResponse1.Name = "rtbResponse1";
+            rtbResponse1.Size = new Size(484, 142);
+            rtbResponse1.TabIndex = 3;
+            rtbResponse1.Text = "";
             // 
-            // richTextBox1
+            // rtbResponse2
             // 
-            richTextBox1.Location = new Point(377, 181);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(484, 142);
-            richTextBox1.TabIndex = 4;
-            richTextBox1.Text = "";
+            rtbResponse2.Location = new Point(377, 181);
+            rtbResponse2.Name = "rtbResponse2";
+            rtbResponse2.Size = new Size(484, 142);
+            rtbResponse2.TabIndex = 4;
+            rtbResponse2.Text = "";
             // 
-            // richTextBox2
+            // rtbResponse3
             // 
-            richTextBox2.Location = new Point(377, 343);
-            richTextBox2.Name = "richTextBox2";
-            richTextBox2.Size = new Size(484, 142);
-            richTextBox2.TabIndex = 5;
-            richTextBox2.Text = "";
+            rtbResponse3.Location = new Point(377, 343);
+            rtbResponse3.Name = "rtbResponse3";
+            rtbResponse3.Size = new Size(484, 142);
+            rtbResponse3.TabIndex = 5;
+            rtbResponse3.Text = "";
             // 
-            // richTextBox3
+            // rtbResponse4
             // 
-            richTextBox3.Location = new Point(377, 508);
-            richTextBox3.Name = "richTextBox3";
-            richTextBox3.Size = new Size(484, 142);
-            richTextBox3.TabIndex = 6;
-            richTextBox3.Text = "";
+            rtbResponse4.Location = new Point(377, 508);
+            rtbResponse4.Name = "rtbResponse4";
+            rtbResponse4.Size = new Size(484, 142);
+            rtbResponse4.TabIndex = 6;
+            rtbResponse4.Text = "";
             // 
-            // button1
+            // btnSendGet2
             // 
-            button1.Location = new Point(12, 241);
-            button1.Name = "button1";
-            button1.Size = new Size(309, 35);
-            button1.TabIndex = 7;
-            button1.Text = "Send Get Request";
-            button1.UseVisualStyleBackColor = true;
+            btnSendGet2.Location = new Point(12, 241);
+            btnSendGet2.Name = "btnSendGet2";
+            btnSendGet2.Size = new Size(309, 35);
+            btnSendGet2.TabIndex = 7;
+            btnSendGet2.Text = "Send POST Request";
+            btnSendGet2.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnSendGet3
             // 
-            button2.Location = new Point(12, 413);
-            button2.Name = "button2";
-            button2.Size = new Size(309, 35);
-            button2.TabIndex = 8;
-            button2.Text = "Send Get Request";
-            button2.UseVisualStyleBackColor = true;
+            btnSendGet3.Location = new Point(12, 413);
+            btnSendGet3.Name = "btnSendGet3";
+            btnSendGet3.Size = new Size(309, 35);
+            btnSendGet3.TabIndex = 8;
+            btnSendGet3.Text = "Send PUT Request";
+            btnSendGet3.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnSendGet4
             // 
-            button3.Location = new Point(12, 582);
-            button3.Name = "button3";
-            button3.Size = new Size(309, 35);
-            button3.TabIndex = 9;
-            button3.Text = "Send Get Request";
-            button3.UseVisualStyleBackColor = true;
+            btnSendGet4.Location = new Point(12, 582);
+            btnSendGet4.Name = "btnSendGet4";
+            btnSendGet4.Size = new Size(309, 35);
+            btnSendGet4.TabIndex = 9;
+            btnSendGet4.Text = "Send DELETE Request";
+            btnSendGet4.UseVisualStyleBackColor = true;
             // 
             // txtApiUrl2
             // 
@@ -189,14 +189,14 @@
             Controls.Add(label3);
             Controls.Add(txtApiUrl2);
             Controls.Add(label2);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(richTextBox3);
-            Controls.Add(richTextBox2);
-            Controls.Add(richTextBox1);
-            Controls.Add(rtbLogs);
-            Controls.Add(rtbResponse);
+            Controls.Add(btnSendGet4);
+            Controls.Add(btnSendGet3);
+            Controls.Add(btnSendGet2);
+            Controls.Add(rtbResponse4);
+            Controls.Add(rtbResponse3);
+            Controls.Add(rtbResponse2);
+            Controls.Add(rtbResponse1);
+            Controls.Add(btnSendGet1);
             Controls.Add(txtApiUrl1);
             Controls.Add(label1);
             Name = "APIHttpTool";
@@ -209,14 +209,14 @@
 
         private Label label1;
         private TextBox txtApiUrl1;
-        private Button rtbResponse;
-        private RichTextBox rtbLogs;
-        private RichTextBox richTextBox1;
-        private RichTextBox richTextBox2;
-        private RichTextBox richTextBox3;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnSendGet1;
+        private RichTextBox rtbResponse1;
+        private RichTextBox rtbResponse2;
+        private RichTextBox rtbResponse3;
+        private RichTextBox rtbResponse4;
+        private Button btnSendGet2;
+        private Button btnSendGet3;
+        private Button btnSendGet4;
         private TextBox txtApiUrl2;
         private Label label2;
         private TextBox txtApiUrl3;
