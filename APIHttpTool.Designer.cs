@@ -65,12 +65,13 @@
             // 
             // btnSendGet
             // 
+            btnSendGet.BackColor = Color.LightGray;
             btnSendGet.Location = new Point(12, 114);
             btnSendGet.Name = "btnSendGet";
             btnSendGet.Size = new Size(309, 35);
             btnSendGet.TabIndex = 2;
             btnSendGet.Text = "Send GET Request";
-            btnSendGet.UseVisualStyleBackColor = true;
+            btnSendGet.UseVisualStyleBackColor = false;
             btnSendGet.Click += btnSendGet_Click;
             // 
             // rtbResponse1
@@ -111,32 +112,35 @@
             // 
             // btnSendPost
             // 
+            btnSendPost.BackColor = Color.LightGray;
             btnSendPost.Location = new Point(12, 273);
             btnSendPost.Name = "btnSendPost";
             btnSendPost.Size = new Size(309, 35);
             btnSendPost.TabIndex = 7;
             btnSendPost.Text = "Send POST Request";
-            btnSendPost.UseVisualStyleBackColor = true;
+            btnSendPost.UseVisualStyleBackColor = false;
             btnSendPost.Click += btnSendPost_Click;
             // 
             // btnSendPut
             // 
+            btnSendPut.BackColor = Color.LightGray;
             btnSendPut.Location = new Point(12, 437);
             btnSendPut.Name = "btnSendPut";
             btnSendPut.Size = new Size(309, 35);
             btnSendPut.TabIndex = 8;
             btnSendPut.Text = "Send PUT Request";
-            btnSendPut.UseVisualStyleBackColor = true;
+            btnSendPut.UseVisualStyleBackColor = false;
             btnSendPut.Click += btnSendPut_Click;
             // 
             // btnSendDelete
             // 
+            btnSendDelete.BackColor = Color.LightGray;
             btnSendDelete.Location = new Point(12, 612);
             btnSendDelete.Name = "btnSendDelete";
             btnSendDelete.Size = new Size(309, 35);
             btnSendDelete.TabIndex = 9;
             btnSendDelete.Text = "Send DELETE Request";
-            btnSendDelete.UseVisualStyleBackColor = true;
+            btnSendDelete.UseVisualStyleBackColor = false;
             btnSendDelete.Click += btnSendDelete_Click;
             // 
             // txtApiUrlPost
