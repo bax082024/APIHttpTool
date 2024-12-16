@@ -1,3 +1,8 @@
+						
+						
+						
+						
+						
 1. GET Request
 Use this endpoint to retrieve a post.
 

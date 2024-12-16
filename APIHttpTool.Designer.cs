@@ -51,6 +51,10 @@
             button1 = new Button();
             button3 = new Button();
             button4 = new Button();
+            lblStatusCodeDelete = new Label();
+            lblStatusCodePut = new Label();
+            lblStatusCodePost = new Label();
+            lblStatusCodeGet = new Label();
             SuspendLayout();
             // 
             // label1
@@ -58,7 +62,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(123, 54);
+            label1.Location = new Point(123, 68);
             label1.Name = "label1";
             label1.Size = new Size(65, 17);
             label1.TabIndex = 0;
@@ -67,7 +71,7 @@
             // txtApiUrl1
             // 
             txtApiUrl1.BackColor = SystemColors.Info;
-            txtApiUrl1.Location = new Point(12, 74);
+            txtApiUrl1.Location = new Point(12, 88);
             txtApiUrl1.Name = "txtApiUrl1";
             txtApiUrl1.Size = new Size(309, 23);
             txtApiUrl1.TabIndex = 1;
@@ -75,7 +79,7 @@
             // btnSendGet
             // 
             btnSendGet.BackColor = Color.LightGreen;
-            btnSendGet.Location = new Point(12, 114);
+            btnSendGet.Location = new Point(12, 128);
             btnSendGet.Name = "btnSendGet";
             btnSendGet.Size = new Size(309, 35);
             btnSendGet.TabIndex = 2;
@@ -86,7 +90,7 @@
             // rtbResponse1
             // 
             rtbResponse1.BackColor = SystemColors.Info;
-            rtbResponse1.Location = new Point(377, 24);
+            rtbResponse1.Location = new Point(377, 38);
             rtbResponse1.Name = "rtbResponse1";
             rtbResponse1.Size = new Size(484, 142);
             rtbResponse1.TabIndex = 3;
@@ -95,7 +99,7 @@
             // rtbResponsePost
             // 
             rtbResponsePost.BackColor = SystemColors.Info;
-            rtbResponsePost.Location = new Point(377, 181);
+            rtbResponsePost.Location = new Point(377, 211);
             rtbResponsePost.Name = "rtbResponsePost";
             rtbResponsePost.Size = new Size(484, 142);
             rtbResponsePost.TabIndex = 4;
@@ -104,7 +108,7 @@
             // rtbResponsePut
             // 
             rtbResponsePut.BackColor = SystemColors.Info;
-            rtbResponsePut.Location = new Point(377, 343);
+            rtbResponsePut.Location = new Point(377, 385);
             rtbResponsePut.Name = "rtbResponsePut";
             rtbResponsePut.Size = new Size(484, 142);
             rtbResponsePut.TabIndex = 5;
@@ -113,7 +117,7 @@
             // rtbResponseDelete
             // 
             rtbResponseDelete.BackColor = SystemColors.Info;
-            rtbResponseDelete.Location = new Point(377, 508);
+            rtbResponseDelete.Location = new Point(377, 562);
             rtbResponseDelete.Name = "rtbResponseDelete";
             rtbResponseDelete.Size = new Size(484, 142);
             rtbResponseDelete.TabIndex = 6;
@@ -122,7 +126,7 @@
             // btnSendPost
             // 
             btnSendPost.BackColor = Color.SkyBlue;
-            btnSendPost.Location = new Point(12, 273);
+            btnSendPost.Location = new Point(12, 303);
             btnSendPost.Name = "btnSendPost";
             btnSendPost.Size = new Size(309, 35);
             btnSendPost.TabIndex = 7;
@@ -133,7 +137,7 @@
             // btnSendPut
             // 
             btnSendPut.BackColor = Color.Khaki;
-            btnSendPut.Location = new Point(12, 437);
+            btnSendPut.Location = new Point(12, 479);
             btnSendPut.Name = "btnSendPut";
             btnSendPut.Size = new Size(309, 35);
             btnSendPut.TabIndex = 8;
@@ -144,7 +148,7 @@
             // btnSendDelete
             // 
             btnSendDelete.BackColor = Color.LightCoral;
-            btnSendDelete.Location = new Point(12, 612);
+            btnSendDelete.Location = new Point(12, 666);
             btnSendDelete.Name = "btnSendDelete";
             btnSendDelete.Size = new Size(309, 35);
             btnSendDelete.TabIndex = 9;
@@ -155,7 +159,7 @@
             // txtApiUrlPost
             // 
             txtApiUrlPost.BackColor = SystemColors.Info;
-            txtApiUrlPost.Location = new Point(12, 234);
+            txtApiUrlPost.Location = new Point(12, 264);
             txtApiUrlPost.Name = "txtApiUrlPost";
             txtApiUrlPost.Size = new Size(309, 23);
             txtApiUrlPost.TabIndex = 11;
@@ -165,7 +169,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label2.Location = new Point(123, 214);
+            label2.Location = new Point(123, 244);
             label2.Name = "label2";
             label2.Size = new Size(65, 17);
             label2.TabIndex = 10;
@@ -174,7 +178,7 @@
             // txtApiUrlPut
             // 
             txtApiUrlPut.BackColor = SystemColors.Info;
-            txtApiUrlPut.Location = new Point(12, 388);
+            txtApiUrlPut.Location = new Point(12, 430);
             txtApiUrlPut.Name = "txtApiUrlPut";
             txtApiUrlPut.Size = new Size(309, 23);
             txtApiUrlPut.TabIndex = 13;
@@ -184,7 +188,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label3.Location = new Point(123, 368);
+            label3.Location = new Point(123, 410);
             label3.Name = "label3";
             label3.Size = new Size(65, 17);
             label3.TabIndex = 12;
@@ -193,7 +197,7 @@
             // txtApiUrlDelete
             // 
             txtApiUrlDelete.BackColor = SystemColors.Info;
-            txtApiUrlDelete.Location = new Point(12, 560);
+            txtApiUrlDelete.Location = new Point(12, 614);
             txtApiUrlDelete.Name = "txtApiUrlDelete";
             txtApiUrlDelete.Size = new Size(309, 23);
             txtApiUrlDelete.TabIndex = 15;
@@ -203,7 +207,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label4.Location = new Point(123, 540);
+            label4.Location = new Point(123, 594);
             label4.Name = "label4";
             label4.Size = new Size(65, 17);
             label4.TabIndex = 14;
@@ -221,7 +225,7 @@
             button2.BackColor = Color.Silver;
             button2.ImageIndex = 0;
             button2.ImageList = imageList1;
-            button2.Location = new Point(327, 388);
+            button2.Location = new Point(327, 430);
             button2.Name = "button2";
             button2.Size = new Size(43, 37);
             button2.TabIndex = 17;
@@ -233,7 +237,7 @@
             button1.BackColor = Color.Silver;
             button1.ImageIndex = 0;
             button1.ImageList = imageList1;
-            button1.Location = new Point(328, 234);
+            button1.Location = new Point(328, 264);
             button1.Name = "button1";
             button1.Size = new Size(43, 37);
             button1.TabIndex = 18;
@@ -245,7 +249,7 @@
             button3.BackColor = Color.Silver;
             button3.ImageIndex = 0;
             button3.ImageList = imageList1;
-            button3.Location = new Point(327, 560);
+            button3.Location = new Point(327, 614);
             button3.Name = "button3";
             button3.Size = new Size(43, 37);
             button3.TabIndex = 19;
@@ -257,19 +261,59 @@
             button4.BackColor = Color.Silver;
             button4.ImageIndex = 0;
             button4.ImageList = imageList1;
-            button4.Location = new Point(327, 74);
+            button4.Location = new Point(327, 88);
             button4.Name = "button4";
             button4.Size = new Size(43, 37);
             button4.TabIndex = 20;
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
+            // lblStatusCodeDelete
+            // 
+            lblStatusCodeDelete.AutoSize = true;
+            lblStatusCodeDelete.Location = new Point(377, 544);
+            lblStatusCodeDelete.Name = "lblStatusCodeDelete";
+            lblStatusCodeDelete.Size = new Size(38, 15);
+            lblStatusCodeDelete.TabIndex = 21;
+            lblStatusCodeDelete.Text = "label5";
+            // 
+            // lblStatusCodePut
+            // 
+            lblStatusCodePut.AutoSize = true;
+            lblStatusCodePut.Location = new Point(377, 367);
+            lblStatusCodePut.Name = "lblStatusCodePut";
+            lblStatusCodePut.Size = new Size(38, 15);
+            lblStatusCodePut.TabIndex = 22;
+            lblStatusCodePut.Text = "label6";
+            // 
+            // lblStatusCodePost
+            // 
+            lblStatusCodePost.AutoSize = true;
+            lblStatusCodePost.Location = new Point(377, 193);
+            lblStatusCodePost.Name = "lblStatusCodePost";
+            lblStatusCodePost.Size = new Size(38, 15);
+            lblStatusCodePost.TabIndex = 23;
+            lblStatusCodePost.Text = "label7";
+            // 
+            // lblStatusCodeGet
+            // 
+            lblStatusCodeGet.AutoSize = true;
+            lblStatusCodeGet.Location = new Point(377, 20);
+            lblStatusCodeGet.Name = "lblStatusCodeGet";
+            lblStatusCodeGet.Size = new Size(38, 15);
+            lblStatusCodeGet.TabIndex = 24;
+            lblStatusCodeGet.Text = "label8";
+            // 
             // APIHttpTool
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
-            ClientSize = new Size(968, 680);
+            ClientSize = new Size(989, 716);
+            Controls.Add(lblStatusCodeGet);
+            Controls.Add(lblStatusCodePost);
+            Controls.Add(lblStatusCodePut);
+            Controls.Add(lblStatusCodeDelete);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button1);
@@ -320,5 +364,9 @@
         private Button button1;
         private Button button3;
         private Button button4;
+        private Label lblStatusCodeDelete;
+        private Label lblStatusCodePut;
+        private Label lblStatusCodePost;
+        private Label lblStatusCodeGet;
     }
 }
