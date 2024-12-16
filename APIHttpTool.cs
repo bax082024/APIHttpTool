@@ -1,4 +1,5 @@
 using System;
+using System.Drawing.Drawing2D;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -128,6 +129,29 @@ namespace APIHttpTool
             catch (Exception ex)
             {
                 rtbResponseDelete.Text = $"Error: {ex.Message}";
+            }
+        }
+
+
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+
+            // Create a fixed-size rectangle for the background gradient
+            Rectangle gradientRectangle = new Rectangle(0, 0, this.Width, this.Height);
+
+            // Create a LinearGradientBrush for the background
+            using (LinearGradientBrush brush = new LinearGradientBrush(
+                gradientRectangle,
+                Color.DarkCyan, // Start color
+                Color.LightBlue,  // End color
+                                 //ColorTranslator.FromHtml("#1E1E2E"), 
+                                 //ColorTranslator.FromHtml("#3B4252"), 
+
+                LinearGradientMode.Vertical)) // Gradient direction
+            {
+                // Fill the form's background with the gradient
+                e.Graphics.FillRectangle(brush, gradientRectangle);
             }
         }
     }

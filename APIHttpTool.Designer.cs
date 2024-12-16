@@ -49,9 +49,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(123, 56);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(123, 54);
             label1.Name = "label1";
-            label1.Size = new Size(55, 15);
+            label1.Size = new Size(65, 17);
             label1.TabIndex = 0;
             label1.Text = "API URL :";
             // 
@@ -154,9 +156,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(123, 216);
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label2.Location = new Point(123, 214);
             label2.Name = "label2";
-            label2.Size = new Size(55, 15);
+            label2.Size = new Size(65, 17);
             label2.TabIndex = 10;
             label2.Text = "API URL :";
             // 
@@ -171,9 +175,11 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(123, 370);
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label3.Location = new Point(123, 368);
             label3.Name = "label3";
-            label3.Size = new Size(55, 15);
+            label3.Size = new Size(65, 17);
             label3.TabIndex = 12;
             label3.Text = "API URL :";
             // 
@@ -188,9 +194,11 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(123, 542);
+            label4.BackColor = Color.Transparent;
+            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            label4.Location = new Point(123, 540);
             label4.Name = "label4";
-            label4.Size = new Size(55, 15);
+            label4.Size = new Size(65, 17);
             label4.TabIndex = 14;
             label4.Text = "API URL :";
             // 
