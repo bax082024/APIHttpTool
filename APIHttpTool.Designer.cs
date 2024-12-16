@@ -70,6 +70,7 @@
             btnSendGet1.TabIndex = 2;
             btnSendGet1.Text = "Send GET Request";
             btnSendGet1.UseVisualStyleBackColor = true;
+            btnSendGet1.Click += btnSendGet1_Click;
             // 
             // rtbResponse1
             // 
