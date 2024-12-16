@@ -74,6 +74,7 @@
             // 
             // rtbResponse1
             // 
+            rtbResponse1.BackColor = SystemColors.Info;
             rtbResponse1.Location = new Point(377, 24);
             rtbResponse1.Name = "rtbResponse1";
             rtbResponse1.Size = new Size(484, 142);
@@ -82,6 +83,7 @@
             // 
             // rtbResponsePost
             // 
+            rtbResponsePost.BackColor = SystemColors.Info;
             rtbResponsePost.Location = new Point(377, 181);
             rtbResponsePost.Name = "rtbResponsePost";
             rtbResponsePost.Size = new Size(484, 142);
@@ -90,6 +92,7 @@
             // 
             // rtbResponsePut
             // 
+            rtbResponsePut.BackColor = SystemColors.Info;
             rtbResponsePut.Location = new Point(377, 343);
             rtbResponsePut.Name = "rtbResponsePut";
             rtbResponsePut.Size = new Size(484, 142);
@@ -98,6 +101,7 @@
             // 
             // rtbResponseDelete
             // 
+            rtbResponseDelete.BackColor = SystemColors.Info;
             rtbResponseDelete.Location = new Point(377, 508);
             rtbResponseDelete.Name = "rtbResponseDelete";
             rtbResponseDelete.Size = new Size(484, 142);
