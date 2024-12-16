@@ -152,7 +152,7 @@ namespace APIHttpTool
             }
         }
 
-       
+
 
         private void APIHttpTool_Load_1(object sender, EventArgs e)
         {
@@ -173,5 +173,34 @@ namespace APIHttpTool
             rtbResponseDelete.Text = "Click 'Send DELETE Request' to delete data.";
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Reset POST URL
+            txtApiUrlPost.Text = "https://jsonplaceholder.typicode.com/posts";
+
+            // Reset POST Body (Payload)
+            rtbResponsePost.Text = "{\n  \"title\": \"foo\",\n  \"body\": \"bar\",\n  \"userId\": 1\n}";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Reset PUT URL
+            txtApiUrlPut.Text = "https://jsonplaceholder.typicode.com/posts/1";
+
+            // Reset PUT Body (Payload)
+            rtbResponsePut.Text = "{\n  \"id\": 1,\n  \"title\": \"updated title\",\n  \"body\": \"updated body\",\n  \"userId\": 1\n}";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            txtApiUrlDelete.Text = "https://jsonplaceholder.typicode.com/posts/1";
+            rtbResponseDelete.Text = "Click 'Send DELETE Request' to delete data.";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            txtApiUrl1.Text = "https://jsonplaceholder.typicode.com/posts/1";
+            rtbResponse1.Text = "Click 'Send GET Request' to fetch data.";
+        }
     }
 }

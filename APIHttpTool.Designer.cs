@@ -49,6 +49,8 @@
             imageList1 = new ImageList(components);
             button2 = new Button();
             button1 = new Button();
+            button3 = new Button();
+            button4 = new Button();
             SuspendLayout();
             // 
             // label1
@@ -223,6 +225,7 @@
             button2.Size = new Size(43, 37);
             button2.TabIndex = 17;
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -233,6 +236,29 @@
             button1.Size = new Size(43, 37);
             button1.TabIndex = 18;
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button3
+            // 
+            button3.ImageIndex = 0;
+            button3.ImageList = imageList1;
+            button3.Location = new Point(327, 560);
+            button3.Name = "button3";
+            button3.Size = new Size(43, 37);
+            button3.TabIndex = 19;
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
+            // button4
+            // 
+            button4.ImageIndex = 0;
+            button4.ImageList = imageList1;
+            button4.Location = new Point(327, 74);
+            button4.Name = "button4";
+            button4.Size = new Size(43, 37);
+            button4.TabIndex = 20;
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // APIHttpTool
             // 
@@ -240,6 +266,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
             ClientSize = new Size(968, 680);
+            Controls.Add(button4);
+            Controls.Add(button3);
             Controls.Add(button1);
             Controls.Add(button2);
             Controls.Add(txtApiUrlDelete);
@@ -286,5 +314,7 @@
         private ImageList imageList1;
         private Button button2;
         private Button button1;
+        private Button button3;
+        private Button button4;
     }
 }
