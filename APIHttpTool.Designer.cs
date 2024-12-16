@@ -57,6 +57,7 @@
             // 
             // txtApiUrl1
             // 
+            txtApiUrl1.BackColor = SystemColors.Info;
             txtApiUrl1.Location = new Point(12, 74);
             txtApiUrl1.Name = "txtApiUrl1";
             txtApiUrl1.Size = new Size(309, 23);
@@ -140,6 +141,7 @@
             // 
             // txtApiUrlPost
             // 
+            txtApiUrlPost.BackColor = SystemColors.Info;
             txtApiUrlPost.Location = new Point(12, 234);
             txtApiUrlPost.Name = "txtApiUrlPost";
             txtApiUrlPost.Size = new Size(309, 23);
@@ -156,6 +158,7 @@
             // 
             // txtApiUrlPut
             // 
+            txtApiUrlPut.BackColor = SystemColors.Info;
             txtApiUrlPut.Location = new Point(12, 388);
             txtApiUrlPut.Name = "txtApiUrlPut";
             txtApiUrlPut.Size = new Size(309, 23);
@@ -172,6 +175,7 @@
             // 
             // txtApiUrlDelete
             // 
+            txtApiUrlDelete.BackColor = SystemColors.Info;
             txtApiUrlDelete.Location = new Point(12, 560);
             txtApiUrlDelete.Name = "txtApiUrlDelete";
             txtApiUrlDelete.Size = new Size(309, 23);
