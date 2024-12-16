@@ -112,6 +112,7 @@
             btnSendGet2.TabIndex = 7;
             btnSendGet2.Text = "Send POST Request";
             btnSendGet2.UseVisualStyleBackColor = true;
+            btnSendGet2.Click += btnSendGet2_Click;
             // 
             // btnSendGet3
             // 
@@ -121,6 +122,7 @@
             btnSendGet3.TabIndex = 8;
             btnSendGet3.Text = "Send PUT Request";
             btnSendGet3.UseVisualStyleBackColor = true;
+            btnSendGet3.Click += btnSendGet3_Click;
             // 
             // btnSendGet4
             // 
@@ -130,6 +132,7 @@
             btnSendGet4.TabIndex = 9;
             btnSendGet4.Text = "Send DELETE Request";
             btnSendGet4.UseVisualStyleBackColor = true;
+            btnSendGet4.Click += btnSendGet4_Click;
             // 
             // txtApiUrl2
             // 
