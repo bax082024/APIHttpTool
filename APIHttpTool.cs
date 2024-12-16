@@ -104,6 +104,7 @@ namespace APIHttpTool
             }
         }
 
+
         // DELETE Request
         private async void btnSendDelete_Click(object sender, EventArgs e)
         {
@@ -132,22 +133,18 @@ namespace APIHttpTool
             }
         }
 
-
+        // Function to make the background change between two colors
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
 
-            // Create a fixed-size rectangle for the background gradient
             Rectangle gradientRectangle = new Rectangle(0, 0, this.Width, this.Height);
 
             // Create a LinearGradientBrush for the background
             using (LinearGradientBrush brush = new LinearGradientBrush(
                 gradientRectangle,
                 Color.DarkCyan, // Start color
-                Color.LightBlue,  // End color
-                                 //ColorTranslator.FromHtml("#1E1E2E"), 
-                                 //ColorTranslator.FromHtml("#3B4252"), 
-
+                Color.LightBlue,  // End color                                 
                 LinearGradientMode.Vertical)) // Gradient direction
             {
                 // Fill the form's background with the gradient
