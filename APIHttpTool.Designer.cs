@@ -74,7 +74,7 @@
             // 
             // btnSendGet
             // 
-            btnSendGet.BackColor = Color.LightGray;
+            btnSendGet.BackColor = Color.LightGreen;
             btnSendGet.Location = new Point(12, 114);
             btnSendGet.Name = "btnSendGet";
             btnSendGet.Size = new Size(309, 35);
@@ -121,7 +121,7 @@
             // 
             // btnSendPost
             // 
-            btnSendPost.BackColor = Color.LightGray;
+            btnSendPost.BackColor = Color.SkyBlue;
             btnSendPost.Location = new Point(12, 273);
             btnSendPost.Name = "btnSendPost";
             btnSendPost.Size = new Size(309, 35);
@@ -132,7 +132,7 @@
             // 
             // btnSendPut
             // 
-            btnSendPut.BackColor = Color.LightGray;
+            btnSendPut.BackColor = Color.Khaki;
             btnSendPut.Location = new Point(12, 437);
             btnSendPut.Name = "btnSendPut";
             btnSendPut.Size = new Size(309, 35);
@@ -143,7 +143,7 @@
             // 
             // btnSendDelete
             // 
-            btnSendDelete.BackColor = Color.LightGray;
+            btnSendDelete.BackColor = Color.LightCoral;
             btnSendDelete.Location = new Point(12, 612);
             btnSendDelete.Name = "btnSendDelete";
             btnSendDelete.Size = new Size(309, 35);
@@ -218,46 +218,50 @@
             // 
             // button2
             // 
+            button2.BackColor = Color.Silver;
             button2.ImageIndex = 0;
             button2.ImageList = imageList1;
             button2.Location = new Point(327, 388);
             button2.Name = "button2";
             button2.Size = new Size(43, 37);
             button2.TabIndex = 17;
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button1
             // 
+            button1.BackColor = Color.Silver;
             button1.ImageIndex = 0;
             button1.ImageList = imageList1;
             button1.Location = new Point(328, 234);
             button1.Name = "button1";
             button1.Size = new Size(43, 37);
             button1.TabIndex = 18;
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.Silver;
             button3.ImageIndex = 0;
             button3.ImageList = imageList1;
             button3.Location = new Point(327, 560);
             button3.Name = "button3";
             button3.Size = new Size(43, 37);
             button3.TabIndex = 19;
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button4
             // 
+            button4.BackColor = Color.Silver;
             button4.ImageIndex = 0;
             button4.ImageList = imageList1;
             button4.Location = new Point(327, 74);
             button4.Name = "button4";
             button4.Size = new Size(43, 37);
             button4.TabIndex = 20;
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // APIHttpTool
