@@ -271,40 +271,44 @@
             // lblStatusCodeDelete
             // 
             lblStatusCodeDelete.AutoSize = true;
-            lblStatusCodeDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblStatusCodeDelete.Location = new Point(377, 544);
+            lblStatusCodeDelete.BackColor = Color.Transparent;
+            lblStatusCodeDelete.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            lblStatusCodeDelete.Location = new Point(377, 542);
             lblStatusCodeDelete.Name = "lblStatusCodeDelete";
-            lblStatusCodeDelete.Size = new Size(98, 15);
+            lblStatusCodeDelete.Size = new Size(108, 17);
             lblStatusCodeDelete.TabIndex = 21;
             lblStatusCodeDelete.Text = "Status: Not Sent";
             // 
             // lblStatusCodePut
             // 
             lblStatusCodePut.AutoSize = true;
-            lblStatusCodePut.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblStatusCodePut.Location = new Point(377, 367);
+            lblStatusCodePut.BackColor = Color.Transparent;
+            lblStatusCodePut.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            lblStatusCodePut.Location = new Point(377, 365);
             lblStatusCodePut.Name = "lblStatusCodePut";
-            lblStatusCodePut.Size = new Size(98, 15);
+            lblStatusCodePut.Size = new Size(108, 17);
             lblStatusCodePut.TabIndex = 22;
             lblStatusCodePut.Text = "Status: Not Sent";
             // 
             // lblStatusCodePost
             // 
             lblStatusCodePost.AutoSize = true;
-            lblStatusCodePost.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblStatusCodePost.Location = new Point(377, 193);
+            lblStatusCodePost.BackColor = Color.Transparent;
+            lblStatusCodePost.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            lblStatusCodePost.Location = new Point(377, 191);
             lblStatusCodePost.Name = "lblStatusCodePost";
-            lblStatusCodePost.Size = new Size(98, 15);
+            lblStatusCodePost.Size = new Size(108, 17);
             lblStatusCodePost.TabIndex = 23;
             lblStatusCodePost.Text = "Status: Not Sent";
             // 
             // lblStatusCodeGet
             // 
             lblStatusCodeGet.AutoSize = true;
-            lblStatusCodeGet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblStatusCodeGet.Location = new Point(377, 20);
+            lblStatusCodeGet.BackColor = Color.Transparent;
+            lblStatusCodeGet.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            lblStatusCodeGet.Location = new Point(377, 18);
             lblStatusCodeGet.Name = "lblStatusCodeGet";
-            lblStatusCodeGet.Size = new Size(98, 15);
+            lblStatusCodeGet.Size = new Size(108, 17);
             lblStatusCodeGet.TabIndex = 24;
             lblStatusCodeGet.Text = "Status: Not Sent";
             // 

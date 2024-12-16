@@ -22,6 +22,7 @@ namespace APIHttpTool
             if (string.IsNullOrWhiteSpace(url))
             {
                 rtbResponse1.Text = "Please enter a valid URL.";
+                lblStatusCodeGet.Text = "Status: Invalid URL";
                 return;
             }
 
@@ -33,14 +34,19 @@ namespace APIHttpTool
                     HttpResponseMessage response = await client.GetAsync(url);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponse1.Text = $"Response:\n{responseBody}";
+                    rtbResponse1.Text = responseBody;
+
+                    // Display the HTTP status code
+                    lblStatusCodeGet.Text = $"Status: {response.StatusCode} ({(int)response.StatusCode})";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponse1.Text = $"Error: {ex.Message}";
+                lblStatusCodeGet.Text = "Status: Error";
             }
         }
+
 
         // POST Request
         private async void btnSendPost_Click(object sender, EventArgs e)
@@ -51,6 +57,7 @@ namespace APIHttpTool
             if (string.IsNullOrWhiteSpace(url))
             {
                 rtbResponsePost.Text = "Please enter a valid URL.";
+                lblStatusCodePost.Text = "Status: Invalid URL";
                 return;
             }
 
@@ -59,19 +66,24 @@ namespace APIHttpTool
                 using (HttpClient client = new HttpClient())
                 {
                     var data = new StringContent(payload, Encoding.UTF8, "application/json");
+
                     rtbResponsePost.Text = $"Sending POST request to {url}...\n";
-
                     HttpResponseMessage response = await client.PostAsync(url, data);
-                    string responseBody = await response.Content.ReadAsStringAsync();
 
-                    rtbResponsePost.Text = $"Response:\n{responseBody}";
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    rtbResponsePost.Text = responseBody;
+
+                    // Display the HTTP status code
+                    lblStatusCodePost.Text = $"Status: {response.StatusCode} ({(int)response.StatusCode})";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponsePost.Text = $"Error: {ex.Message}";
+                lblStatusCodePost.Text = "Status: Error";
             }
         }
+
 
         // PUT Request
         private async void btnSendPut_Click(object sender, EventArgs e)
@@ -82,6 +94,7 @@ namespace APIHttpTool
             if (string.IsNullOrWhiteSpace(url))
             {
                 rtbResponsePut.Text = "Please enter a valid URL.";
+                lblStatusCodePut.Text = "Status: Invalid URL";
                 return;
             }
 
@@ -90,19 +103,24 @@ namespace APIHttpTool
                 using (HttpClient client = new HttpClient())
                 {
                     var data = new StringContent(payload, Encoding.UTF8, "application/json");
+
                     rtbResponsePut.Text = $"Sending PUT request to {url}...\n";
-
                     HttpResponseMessage response = await client.PutAsync(url, data);
-                    string responseBody = await response.Content.ReadAsStringAsync();
 
-                    rtbResponsePut.Text = $"Response:\n{responseBody}";
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    rtbResponsePut.Text = responseBody;
+
+                    // Display the HTTP status code
+                    lblStatusCodePut.Text = $"Status: {response.StatusCode} ({(int)response.StatusCode})";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponsePut.Text = $"Error: {ex.Message}";
+                lblStatusCodePut.Text = "Status: Error";
             }
         }
+
 
 
         // DELETE Request
@@ -113,6 +131,7 @@ namespace APIHttpTool
             if (string.IsNullOrWhiteSpace(url))
             {
                 rtbResponseDelete.Text = "Please enter a valid URL.";
+                lblStatusCodeDelete.Text = "Status: Invalid URL";
                 return;
             }
 
@@ -124,14 +143,19 @@ namespace APIHttpTool
                     HttpResponseMessage response = await client.DeleteAsync(url);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponseDelete.Text = $"Response:\n{responseBody}";
+                    rtbResponseDelete.Text = responseBody;
+
+                    // Display the HTTP status code
+                    lblStatusCodeDelete.Text = $"Status: {response.StatusCode} ({(int)response.StatusCode})";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponseDelete.Text = $"Error: {ex.Message}";
+                lblStatusCodeDelete.Text = "Status: Error";
             }
         }
+
 
         // Function to make the background change between two colors
         protected override void OnPaint(PaintEventArgs e)
@@ -180,7 +204,11 @@ namespace APIHttpTool
 
             // Reset POST Body (Payload)
             rtbResponsePost.Text = "{\n  \"title\": \"foo\",\n  \"body\": \"bar\",\n  \"userId\": 1\n}";
+
+            // Reset Status Label
+            lblStatusCodePost.Text = "Status: Not Sent";
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -189,18 +217,33 @@ namespace APIHttpTool
 
             // Reset PUT Body (Payload)
             rtbResponsePut.Text = "{\n  \"id\": 1,\n  \"title\": \"updated title\",\n  \"body\": \"updated body\",\n  \"userId\": 1\n}";
-        }
 
+            // Reset Status Label
+            lblStatusCodePut.Text = "Status: Not Sent";
+        }
         private void button3_Click(object sender, EventArgs e)
         {
+            // Reset DELETE URL
             txtApiUrlDelete.Text = "https://jsonplaceholder.typicode.com/posts/1";
+
+            // Reset Response
             rtbResponseDelete.Text = "Click 'Send DELETE Request' to delete data.";
+
+            // Reset Status Label
+            lblStatusCodeDelete.Text = "Status: Not Sent";
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
+            // Reset GET URL
             txtApiUrl1.Text = "https://jsonplaceholder.typicode.com/posts/1";
+
+            // Reset Response
             rtbResponse1.Text = "Click 'Send GET Request' to fetch data.";
+
+            // Reset Status Label
+            lblStatusCodeGet.Text = "Status: Not Sent";
         }
+
     }
 }
