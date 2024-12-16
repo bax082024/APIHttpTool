@@ -49,7 +49,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(123, 28);
+            label1.Location = new Point(123, 56);
             label1.Name = "label1";
             label1.Size = new Size(55, 15);
             label1.TabIndex = 0;
@@ -57,14 +57,14 @@
             // 
             // txtApiUrl1
             // 
-            txtApiUrl1.Location = new Point(12, 46);
+            txtApiUrl1.Location = new Point(12, 74);
             txtApiUrl1.Name = "txtApiUrl1";
             txtApiUrl1.Size = new Size(309, 23);
             txtApiUrl1.TabIndex = 1;
             // 
             // btnSendGet
             // 
-            btnSendGet.Location = new Point(12, 86);
+            btnSendGet.Location = new Point(12, 114);
             btnSendGet.Name = "btnSendGet";
             btnSendGet.Size = new Size(309, 35);
             btnSendGet.TabIndex = 2;
@@ -106,7 +106,7 @@
             // 
             // btnSendPost
             // 
-            btnSendPost.Location = new Point(12, 241);
+            btnSendPost.Location = new Point(12, 273);
             btnSendPost.Name = "btnSendPost";
             btnSendPost.Size = new Size(309, 35);
             btnSendPost.TabIndex = 7;
@@ -116,7 +116,7 @@
             // 
             // btnSendPut
             // 
-            btnSendPut.Location = new Point(12, 413);
+            btnSendPut.Location = new Point(12, 437);
             btnSendPut.Name = "btnSendPut";
             btnSendPut.Size = new Size(309, 35);
             btnSendPut.TabIndex = 8;
@@ -126,7 +126,7 @@
             // 
             // btnSendDelete
             // 
-            btnSendDelete.Location = new Point(12, 582);
+            btnSendDelete.Location = new Point(12, 612);
             btnSendDelete.Name = "btnSendDelete";
             btnSendDelete.Size = new Size(309, 35);
             btnSendDelete.TabIndex = 9;
@@ -136,7 +136,7 @@
             // 
             // txtApiUrlPost
             // 
-            txtApiUrlPost.Location = new Point(12, 202);
+            txtApiUrlPost.Location = new Point(12, 234);
             txtApiUrlPost.Name = "txtApiUrlPost";
             txtApiUrlPost.Size = new Size(309, 23);
             txtApiUrlPost.TabIndex = 11;
@@ -144,7 +144,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(123, 184);
+            label2.Location = new Point(123, 216);
             label2.Name = "label2";
             label2.Size = new Size(55, 15);
             label2.TabIndex = 10;
@@ -152,7 +152,7 @@
             // 
             // txtApiUrlPut
             // 
-            txtApiUrlPut.Location = new Point(12, 364);
+            txtApiUrlPut.Location = new Point(12, 388);
             txtApiUrlPut.Name = "txtApiUrlPut";
             txtApiUrlPut.Size = new Size(309, 23);
             txtApiUrlPut.TabIndex = 13;
@@ -160,7 +160,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(123, 346);
+            label3.Location = new Point(123, 370);
             label3.Name = "label3";
             label3.Size = new Size(55, 15);
             label3.TabIndex = 12;
@@ -168,7 +168,7 @@
             // 
             // txtApiUrlDelete
             // 
-            txtApiUrlDelete.Location = new Point(12, 530);
+            txtApiUrlDelete.Location = new Point(12, 560);
             txtApiUrlDelete.Name = "txtApiUrlDelete";
             txtApiUrlDelete.Size = new Size(309, 23);
             txtApiUrlDelete.TabIndex = 15;
@@ -176,7 +176,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(123, 512);
+            label4.Location = new Point(123, 542);
             label4.Name = "label4";
             label4.Size = new Size(55, 15);
             label4.TabIndex = 14;
@@ -186,6 +186,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.DimGray;
             ClientSize = new Size(968, 680);
             Controls.Add(txtApiUrlDelete);
             Controls.Add(label4);
