@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            txtApiUrl = new TextBox();
+            txtApiUrl1 = new TextBox();
             rtbResponse = new Button();
             rtbLogs = new RichTextBox();
             richTextBox1 = new RichTextBox();
@@ -38,11 +38,11 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            textBox1 = new TextBox();
+            txtApiUrl2 = new TextBox();
             label2 = new Label();
-            textBox2 = new TextBox();
+            txtApiUrl3 = new TextBox();
             label3 = new Label();
-            textBox3 = new TextBox();
+            txtApiUrl4 = new TextBox();
             label4 = new Label();
             SuspendLayout();
             // 
@@ -55,12 +55,12 @@
             label1.TabIndex = 0;
             label1.Text = "API URL :";
             // 
-            // txtApiUrl
+            // txtApiUrl1
             // 
-            txtApiUrl.Location = new Point(12, 46);
-            txtApiUrl.Name = "txtApiUrl";
-            txtApiUrl.Size = new Size(309, 23);
-            txtApiUrl.TabIndex = 1;
+            txtApiUrl1.Location = new Point(12, 46);
+            txtApiUrl1.Name = "txtApiUrl1";
+            txtApiUrl1.Size = new Size(309, 23);
+            txtApiUrl1.TabIndex = 1;
             // 
             // rtbResponse
             // 
@@ -130,12 +130,12 @@
             button3.Text = "Send Get Request";
             button3.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtApiUrl2
             // 
-            textBox1.Location = new Point(12, 202);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(309, 23);
-            textBox1.TabIndex = 11;
+            txtApiUrl2.Location = new Point(12, 202);
+            txtApiUrl2.Name = "txtApiUrl2";
+            txtApiUrl2.Size = new Size(309, 23);
+            txtApiUrl2.TabIndex = 11;
             // 
             // label2
             // 
@@ -146,12 +146,12 @@
             label2.TabIndex = 10;
             label2.Text = "API URL :";
             // 
-            // textBox2
+            // txtApiUrl3
             // 
-            textBox2.Location = new Point(12, 364);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(309, 23);
-            textBox2.TabIndex = 13;
+            txtApiUrl3.Location = new Point(12, 364);
+            txtApiUrl3.Name = "txtApiUrl3";
+            txtApiUrl3.Size = new Size(309, 23);
+            txtApiUrl3.TabIndex = 13;
             // 
             // label3
             // 
@@ -162,12 +162,12 @@
             label3.TabIndex = 12;
             label3.Text = "API URL :";
             // 
-            // textBox3
+            // txtApiUrl4
             // 
-            textBox3.Location = new Point(12, 530);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(309, 23);
-            textBox3.TabIndex = 15;
+            txtApiUrl4.Location = new Point(12, 530);
+            txtApiUrl4.Name = "txtApiUrl4";
+            txtApiUrl4.Size = new Size(309, 23);
+            txtApiUrl4.TabIndex = 15;
             // 
             // label4
             // 
@@ -183,11 +183,11 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(968, 680);
-            Controls.Add(textBox3);
+            Controls.Add(txtApiUrl4);
             Controls.Add(label4);
-            Controls.Add(textBox2);
+            Controls.Add(txtApiUrl3);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txtApiUrl2);
             Controls.Add(label2);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -197,7 +197,7 @@
             Controls.Add(richTextBox1);
             Controls.Add(rtbLogs);
             Controls.Add(rtbResponse);
-            Controls.Add(txtApiUrl);
+            Controls.Add(txtApiUrl1);
             Controls.Add(label1);
             Name = "APIHttpTool";
             Text = "API Http Tool";
@@ -208,7 +208,7 @@
         #endregion
 
         private Label label1;
-        private TextBox txtApiUrl;
+        private TextBox txtApiUrl1;
         private Button rtbResponse;
         private RichTextBox rtbLogs;
         private RichTextBox richTextBox1;
@@ -217,11 +217,11 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private TextBox textBox1;
+        private TextBox txtApiUrl2;
         private Label label2;
-        private TextBox textBox2;
+        private TextBox txtApiUrl3;
         private Label label3;
-        private TextBox textBox3;
+        private TextBox txtApiUrl4;
         private Label label4;
     }
 }
