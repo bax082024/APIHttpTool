@@ -271,36 +271,40 @@
             // lblStatusCodeDelete
             // 
             lblStatusCodeDelete.AutoSize = true;
+            lblStatusCodeDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblStatusCodeDelete.Location = new Point(377, 544);
             lblStatusCodeDelete.Name = "lblStatusCodeDelete";
-            lblStatusCodeDelete.Size = new Size(38, 15);
+            lblStatusCodeDelete.Size = new Size(40, 15);
             lblStatusCodeDelete.TabIndex = 21;
             lblStatusCodeDelete.Text = "label5";
             // 
             // lblStatusCodePut
             // 
             lblStatusCodePut.AutoSize = true;
+            lblStatusCodePut.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblStatusCodePut.Location = new Point(377, 367);
             lblStatusCodePut.Name = "lblStatusCodePut";
-            lblStatusCodePut.Size = new Size(38, 15);
+            lblStatusCodePut.Size = new Size(40, 15);
             lblStatusCodePut.TabIndex = 22;
             lblStatusCodePut.Text = "label6";
             // 
             // lblStatusCodePost
             // 
             lblStatusCodePost.AutoSize = true;
+            lblStatusCodePost.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblStatusCodePost.Location = new Point(377, 193);
             lblStatusCodePost.Name = "lblStatusCodePost";
-            lblStatusCodePost.Size = new Size(38, 15);
+            lblStatusCodePost.Size = new Size(40, 15);
             lblStatusCodePost.TabIndex = 23;
             lblStatusCodePost.Text = "label7";
             // 
             // lblStatusCodeGet
             // 
             lblStatusCodeGet.AutoSize = true;
+            lblStatusCodeGet.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblStatusCodeGet.Location = new Point(377, 20);
             lblStatusCodeGet.Name = "lblStatusCodeGet";
-            lblStatusCodeGet.Size = new Size(38, 15);
+            lblStatusCodeGet.Size = new Size(40, 15);
             lblStatusCodeGet.TabIndex = 24;
             lblStatusCodeGet.Text = "label8";
             // 
@@ -309,7 +313,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
-            ClientSize = new Size(989, 716);
+            ClientSize = new Size(989, 731);
             Controls.Add(lblStatusCodeGet);
             Controls.Add(lblStatusCodePost);
             Controls.Add(lblStatusCodePut);
