@@ -105,13 +105,13 @@ namespace APIHttpTool
         }
 
 
-        private void btnSendGet1_Click(object sender, EventArgs e)
+        private async void btnSendGet_Click(object sender, EventArgs e)
         {
-            string url = txtApiUrlGet.Text;
+            string url = txtApiUrl1.Text;
 
             if (string.IsNullOrWhiteSpace(url))
             {
-                rtbResponseGet.Text = "Please enter a valid URL.";
+                rtbResponse1.Text = "Please enter a valid URL.";
                 return;
             }
 
@@ -119,17 +119,18 @@ namespace APIHttpTool
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    rtbResponseGet.Text = $"Sending GET request to {url}...\n";
+                    rtbResponse1.Text = $"Sending GET request to {url}...\n";
                     HttpResponseMessage response = await client.GetAsync(url);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponseGet.Text = responseBody;
+                    rtbResponse1.Text = responseBody;
                 }
             }
             catch (Exception ex)
             {
-                rtbResponseGet.Text = $"Error: {ex.Message}";
+                rtbResponse1.Text = $"Error: {ex.Message}";
             }
         }
+
     }
 }

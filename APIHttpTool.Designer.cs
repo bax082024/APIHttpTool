@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            txtApiUrlGet = new TextBox();
-            btnSendGet1 = new Button();
-            rtbResponseGet = new RichTextBox();
+            txtApiUrl1 = new TextBox();
+            btnSendGet = new Button();
+            rtbResponse1 = new RichTextBox();
             rtbResponsePost = new RichTextBox();
             rtbResponsePut = new RichTextBox();
             rtbResponseDelete = new RichTextBox();
@@ -55,30 +55,30 @@
             label1.TabIndex = 0;
             label1.Text = "API URL :";
             // 
-            // txtApiUrlGet
+            // txtApiUrl1
             // 
-            txtApiUrlGet.Location = new Point(12, 46);
-            txtApiUrlGet.Name = "txtApiUrlGet";
-            txtApiUrlGet.Size = new Size(309, 23);
-            txtApiUrlGet.TabIndex = 1;
+            txtApiUrl1.Location = new Point(12, 46);
+            txtApiUrl1.Name = "txtApiUrl1";
+            txtApiUrl1.Size = new Size(309, 23);
+            txtApiUrl1.TabIndex = 1;
             // 
-            // btnSendGet1
+            // btnSendGet
             // 
-            btnSendGet1.Location = new Point(12, 86);
-            btnSendGet1.Name = "btnSendGet1";
-            btnSendGet1.Size = new Size(309, 35);
-            btnSendGet1.TabIndex = 2;
-            btnSendGet1.Text = "Send GET Request";
-            btnSendGet1.UseVisualStyleBackColor = true;
-            btnSendGet1.Click += btnSendGet1_Click;
+            btnSendGet.Location = new Point(12, 86);
+            btnSendGet.Name = "btnSendGet";
+            btnSendGet.Size = new Size(309, 35);
+            btnSendGet.TabIndex = 2;
+            btnSendGet.Text = "Send GET Request";
+            btnSendGet.UseVisualStyleBackColor = true;
+            btnSendGet.Click += btnSendGet_Click;
             // 
-            // rtbResponseGet
+            // rtbResponse1
             // 
-            rtbResponseGet.Location = new Point(377, 24);
-            rtbResponseGet.Name = "rtbResponseGet";
-            rtbResponseGet.Size = new Size(484, 142);
-            rtbResponseGet.TabIndex = 3;
-            rtbResponseGet.Text = "";
+            rtbResponse1.Location = new Point(377, 24);
+            rtbResponse1.Name = "rtbResponse1";
+            rtbResponse1.Size = new Size(484, 142);
+            rtbResponse1.TabIndex = 3;
+            rtbResponse1.Text = "";
             // 
             // rtbResponsePost
             // 
@@ -199,9 +199,9 @@
             Controls.Add(rtbResponseDelete);
             Controls.Add(rtbResponsePut);
             Controls.Add(rtbResponsePost);
-            Controls.Add(rtbResponseGet);
-            Controls.Add(btnSendGet1);
-            Controls.Add(txtApiUrlGet);
+            Controls.Add(rtbResponse1);
+            Controls.Add(btnSendGet);
+            Controls.Add(txtApiUrl1);
             Controls.Add(label1);
             Name = "APIHttpTool";
             Text = "API Http Tool";
@@ -212,9 +212,9 @@
         #endregion
 
         private Label label1;
-        private TextBox txtApiUrlGet;
-        private Button btnSendGet1;
-        private RichTextBox rtbResponseGet;
+        private TextBox txtApiUrl1;
+        private Button btnSendGet;
+        private RichTextBox rtbResponse1;
         private RichTextBox rtbResponsePost;
         private RichTextBox rtbResponsePut;
         private RichTextBox rtbResponseDelete;

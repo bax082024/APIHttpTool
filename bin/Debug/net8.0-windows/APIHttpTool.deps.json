@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "APIHttpTool/1.0.0": {
+        "runtime": {
+          "APIHttpTool.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "APIHttpTool/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
