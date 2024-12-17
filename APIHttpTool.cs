@@ -22,7 +22,6 @@ namespace APIHttpTool
             if (string.IsNullOrWhiteSpace(url))
             {
                 rtbResponse1.Text = "Please enter a valid URL.";
-                lblStatusCodeGet.Text = "Status: Invalid URL";
                 return;
             }
 
@@ -30,22 +29,25 @@ namespace APIHttpTool
             {
                 using (HttpClient client = new HttpClient())
                 {
+                    // Add headers if provided
+                    if (!string.IsNullOrWhiteSpace(txtHeaderKeyGet.Text) && !string.IsNullOrWhiteSpace(txtHeaderValueGet.Text))
+                    {
+                        client.DefaultRequestHeaders.Add(txtHeaderKeyGet.Text, txtHeaderValueGet.Text);
+                    }
+
                     rtbResponse1.Text = $"Sending GET request to {url}...\n";
                     HttpResponseMessage response = await client.GetAsync(url);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponse1.Text = responseBody;
-
-                    // Display the HTTP status code
-                    lblStatusCodeGet.Text = $"Status: {response.StatusCode} ({(int)response.StatusCode})";
+                    rtbResponse1.Text = $"Status: {response.StatusCode}\n{responseBody}";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponse1.Text = $"Error: {ex.Message}";
-                lblStatusCodeGet.Text = "Status: Error";
             }
         }
+
 
 
         // POST Request
@@ -57,7 +59,12 @@ namespace APIHttpTool
             if (string.IsNullOrWhiteSpace(url))
             {
                 rtbResponsePost.Text = "Please enter a valid URL.";
-                lblStatusCodePost.Text = "Status: Invalid URL";
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(payload))
+            {
+                rtbResponsePost.Text = "Please enter a valid JSON payload.";
                 return;
             }
 
@@ -65,31 +72,34 @@ namespace APIHttpTool
             {
                 using (HttpClient client = new HttpClient())
                 {
+                    // Add headers if provided
+                    if (!string.IsNullOrWhiteSpace(txtHeaderKeyPost.Text) && !string.IsNullOrWhiteSpace(txtHeaderValuePost.Text))
+                    {
+                        client.DefaultRequestHeaders.Add(txtHeaderKeyPost.Text, txtHeaderValuePost.Text);
+                    }
+
                     var data = new StringContent(payload, Encoding.UTF8, "application/json");
 
                     rtbResponsePost.Text = $"Sending POST request to {url}...\n";
                     HttpResponseMessage response = await client.PostAsync(url, data);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponsePost.Text = responseBody;
-
-                    // Display the HTTP status code
-                    lblStatusCodePost.Text = $"Status: {response.StatusCode} ({(int)response.StatusCode})";
+                    rtbResponsePost.Text = $"Status: {response.StatusCode}\n{responseBody}";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponsePost.Text = $"Error: {ex.Message}";
-                lblStatusCodePost.Text = "Status: Error";
             }
         }
+
 
 
         // PUT Request
         private async void btnSendPut_Click(object sender, EventArgs e)
         {
-            string url = txtApiUrlPut.Text;  // URL input
-            string payload = rtbResponsePut.Text;  // Payload input (optional)
+            string url = txtApiUrlPut.Text;
+            string payload = rtbResponsePut.Text;
 
             if (string.IsNullOrWhiteSpace(url))
             {
@@ -97,38 +107,29 @@ namespace APIHttpTool
                 return;
             }
 
+            if (string.IsNullOrWhiteSpace(payload))
+            {
+                rtbResponsePut.Text = "Please enter a valid JSON payload.";
+                return;
+            }
+
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
-                    // Add Headers (optional)
-                    if (!string.IsNullOrWhiteSpace(txtHeaderKey3.Text) && !string.IsNullOrWhiteSpace(txtHeaderValue3.Text))
+                    // Add headers if provided
+                    if (!string.IsNullOrWhiteSpace(txtHeaderKeyPut.Text) && !string.IsNullOrWhiteSpace(txtHeaderValuePut.Text))
                     {
-                        client.DefaultRequestHeaders.Add(txtHeaderKey3.Text, txtHeaderValue3.Text);
+                        client.DefaultRequestHeaders.Add(txtHeaderKeyPut.Text, txtHeaderValuePut.Text);
                     }
 
-                    // Use existing payload if provided
                     var data = new StringContent(payload, Encoding.UTF8, "application/json");
 
                     rtbResponsePut.Text = $"Sending PUT request to {url}...\n";
                     HttpResponseMessage response = await client.PutAsync(url, data);
 
-                    // Ensure status and response are displayed
                     string responseBody = await response.Content.ReadAsStringAsync();
                     rtbResponsePut.Text = $"Status: {response.StatusCode}\n{responseBody}";
-
-                    // Optional: Update output fields (Key/Value TextBoxes)
-                    txtOutKey3.Text = "URL:";
-                    txtOutValue3.Text = url;
-
-                    txtOutKey4.Text = "Body:";
-                    txtOutValue4.Text = payload;
-
-                    if (!string.IsNullOrWhiteSpace(txtHeaderKey3.Text))
-                    {
-                        txtOutKey5.Text = "Header:";
-                        txtOutValue5.Text = $"{txtHeaderKey3.Text}: {txtHeaderValue3.Text}";
-                    }
                 }
             }
             catch (Exception ex)
@@ -136,6 +137,7 @@ namespace APIHttpTool
                 rtbResponsePut.Text = $"Error: {ex.Message}";
             }
         }
+
 
 
 
@@ -148,7 +150,6 @@ namespace APIHttpTool
             if (string.IsNullOrWhiteSpace(url))
             {
                 rtbResponseDelete.Text = "Please enter a valid URL.";
-                lblStatusCodeDelete.Text = "Status: Invalid URL";
                 return;
             }
 
@@ -156,22 +157,25 @@ namespace APIHttpTool
             {
                 using (HttpClient client = new HttpClient())
                 {
+                    // Add headers if provided
+                    if (!string.IsNullOrWhiteSpace(txtHeaderKeyDelete.Text) && !string.IsNullOrWhiteSpace(txtHeaderValueDelete.Text))
+                    {
+                        client.DefaultRequestHeaders.Add(txtHeaderKeyDelete.Text, txtHeaderValueDelete.Text);
+                    }
+
                     rtbResponseDelete.Text = $"Sending DELETE request to {url}...\n";
                     HttpResponseMessage response = await client.DeleteAsync(url);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponseDelete.Text = responseBody;
-
-                    // Display the HTTP status code
-                    lblStatusCodeDelete.Text = $"Status: {response.StatusCode} ({(int)response.StatusCode})";
+                    rtbResponseDelete.Text = $"Status: {response.StatusCode}\n{responseBody}";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponseDelete.Text = $"Error: {ex.Message}";
-                lblStatusCodeDelete.Text = "Status: Error";
             }
         }
+
 
 
         // Function to make the background change between two colors
@@ -262,7 +266,28 @@ namespace APIHttpTool
             lblStatusCodeDelete.Text = "Status: Not Sent";
         }
 
-       
+        private void btnResetHeadersGet_Click(object sender, EventArgs e)
+        {
+            txtHeaderKeyGet.Text = "";
+            txtHeaderValueGet.Text = "";
+        }
 
+        private void btnResetHeadersPost_Click(object sender, EventArgs e)
+        {
+            txtHeaderKeyPost.Text = "";
+            txtHeaderValuePost.Text = "";
+        }
+
+        private void btnResetHeadersPut_Click(object sender, EventArgs e)
+        {
+            txtHeaderKeyPut.Text = "";
+            txtHeaderValuePut.Text = "";
+        }
+
+        private void btnResetHeadersDelete_Click(object sender, EventArgs e)
+        {
+            txtHeaderKeyDelete.Text = "";
+            txtHeaderValueDelete.Text = "";
+        }
     }
 }

@@ -55,13 +55,13 @@
             lblStatusCodePut = new Label();
             lblStatusCodePost = new Label();
             lblStatusCodeGet = new Label();
-            txhHeaderKeyGet = new TextBox();
+            txtHeaderKeyGet = new TextBox();
             txtHeaderValueGet = new TextBox();
-            txhHeaderKeyPost = new TextBox();
+            txtHeaderKeyPost = new TextBox();
             txtHeaderValuePost = new TextBox();
-            txhHeaderKeyPut = new TextBox();
+            txtHeaderKeyPut = new TextBox();
             txtHeaderValuePut = new TextBox();
-            txhHeaderKeyDelete = new TextBox();
+            txtHeaderKeyDelete = new TextBox();
             txtHeaderValueDelete = new TextBox();
             btnResetHeadersGet = new Button();
             btnResetHeadersPost = new Button();
@@ -327,13 +327,13 @@
             lblStatusCodeGet.TabIndex = 24;
             lblStatusCodeGet.Text = "Status: Not Sent";
             // 
-            // txhHeaderKeyGet
+            // txtHeaderKeyGet
             // 
-            txhHeaderKeyGet.BackColor = SystemColors.Info;
-            txhHeaderKeyGet.Location = new Point(697, 88);
-            txhHeaderKeyGet.Name = "txhHeaderKeyGet";
-            txhHeaderKeyGet.Size = new Size(150, 23);
-            txhHeaderKeyGet.TabIndex = 25;
+            txtHeaderKeyGet.BackColor = SystemColors.Info;
+            txtHeaderKeyGet.Location = new Point(697, 88);
+            txtHeaderKeyGet.Name = "txtHeaderKeyGet";
+            txtHeaderKeyGet.Size = new Size(150, 23);
+            txtHeaderKeyGet.TabIndex = 25;
             // 
             // txtHeaderValueGet
             // 
@@ -343,13 +343,13 @@
             txtHeaderValueGet.Size = new Size(250, 23);
             txtHeaderValueGet.TabIndex = 26;
             // 
-            // txhHeaderKeyPost
+            // txtHeaderKeyPost
             // 
-            txhHeaderKeyPost.BackColor = SystemColors.Info;
-            txhHeaderKeyPost.Location = new Point(697, 264);
-            txhHeaderKeyPost.Name = "txhHeaderKeyPost";
-            txhHeaderKeyPost.Size = new Size(150, 23);
-            txhHeaderKeyPost.TabIndex = 27;
+            txtHeaderKeyPost.BackColor = SystemColors.Info;
+            txtHeaderKeyPost.Location = new Point(697, 264);
+            txtHeaderKeyPost.Name = "txtHeaderKeyPost";
+            txtHeaderKeyPost.Size = new Size(150, 23);
+            txtHeaderKeyPost.TabIndex = 27;
             // 
             // txtHeaderValuePost
             // 
@@ -359,13 +359,13 @@
             txtHeaderValuePost.Size = new Size(250, 23);
             txtHeaderValuePost.TabIndex = 28;
             // 
-            // txhHeaderKeyPut
+            // txtHeaderKeyPut
             // 
-            txhHeaderKeyPut.BackColor = SystemColors.Info;
-            txhHeaderKeyPut.Location = new Point(697, 444);
-            txhHeaderKeyPut.Name = "txhHeaderKeyPut";
-            txhHeaderKeyPut.Size = new Size(150, 23);
-            txhHeaderKeyPut.TabIndex = 29;
+            txtHeaderKeyPut.BackColor = SystemColors.Info;
+            txtHeaderKeyPut.Location = new Point(697, 444);
+            txtHeaderKeyPut.Name = "txtHeaderKeyPut";
+            txtHeaderKeyPut.Size = new Size(150, 23);
+            txtHeaderKeyPut.TabIndex = 29;
             // 
             // txtHeaderValuePut
             // 
@@ -375,13 +375,13 @@
             txtHeaderValuePut.Size = new Size(250, 23);
             txtHeaderValuePut.TabIndex = 30;
             // 
-            // txhHeaderKeyDelete
+            // txtHeaderKeyDelete
             // 
-            txhHeaderKeyDelete.BackColor = SystemColors.Info;
-            txhHeaderKeyDelete.Location = new Point(697, 628);
-            txhHeaderKeyDelete.Name = "txhHeaderKeyDelete";
-            txhHeaderKeyDelete.Size = new Size(150, 23);
-            txhHeaderKeyDelete.TabIndex = 31;
+            txtHeaderKeyDelete.BackColor = SystemColors.Info;
+            txtHeaderKeyDelete.Location = new Point(697, 628);
+            txtHeaderKeyDelete.Name = "txtHeaderKeyDelete";
+            txtHeaderKeyDelete.Size = new Size(150, 23);
+            txtHeaderKeyDelete.TabIndex = 31;
             // 
             // txtHeaderValueDelete
             // 
@@ -401,6 +401,7 @@
             btnResetHeadersGet.TabIndex = 33;
             btnResetHeadersGet.Text = "Reset";
             btnResetHeadersGet.UseVisualStyleBackColor = false;
+            btnResetHeadersGet.Click += btnResetHeadersGet_Click;
             // 
             // btnResetHeadersPost
             // 
@@ -412,6 +413,7 @@
             btnResetHeadersPost.TabIndex = 34;
             btnResetHeadersPost.Text = "Reset";
             btnResetHeadersPost.UseVisualStyleBackColor = false;
+            btnResetHeadersPost.Click += btnResetHeadersPost_Click;
             // 
             // btnResetHeadersPut
             // 
@@ -423,6 +425,7 @@
             btnResetHeadersPut.TabIndex = 35;
             btnResetHeadersPut.Text = "Reset";
             btnResetHeadersPut.UseVisualStyleBackColor = false;
+            btnResetHeadersPut.Click += btnResetHeadersPut_Click;
             // 
             // btnResetHeadersDelete
             // 
@@ -434,6 +437,7 @@
             btnResetHeadersDelete.TabIndex = 36;
             btnResetHeadersDelete.Text = "Reset";
             btnResetHeadersDelete.UseVisualStyleBackColor = false;
+            btnResetHeadersDelete.Click += btnResetHeadersDelete_Click;
             // 
             // lblHeader
             // 
@@ -479,13 +483,13 @@
             Controls.Add(btnResetHeadersPost);
             Controls.Add(btnResetHeadersGet);
             Controls.Add(txtHeaderValueDelete);
-            Controls.Add(txhHeaderKeyDelete);
+            Controls.Add(txtHeaderKeyDelete);
             Controls.Add(txtHeaderValuePut);
-            Controls.Add(txhHeaderKeyPut);
+            Controls.Add(txtHeaderKeyPut);
             Controls.Add(txtHeaderValuePost);
-            Controls.Add(txhHeaderKeyPost);
+            Controls.Add(txtHeaderKeyPost);
             Controls.Add(txtHeaderValueGet);
-            Controls.Add(txhHeaderKeyGet);
+            Controls.Add(txtHeaderKeyGet);
             Controls.Add(lblStatusCodeGet);
             Controls.Add(lblStatusCodePost);
             Controls.Add(lblStatusCodePut);
@@ -544,13 +548,13 @@
         private Label lblStatusCodePut;
         private Label lblStatusCodePost;
         private Label lblStatusCodeGet;
-        private TextBox txhHeaderKeyGet;
+        private TextBox txtHeaderKeyGet;
         private TextBox txtHeaderValueGet;
-        private TextBox txhHeaderKeyPost;
+        private TextBox txtHeaderKeyPost;
         private TextBox txtHeaderValuePost;
-        private TextBox txhHeaderKeyPut;
+        private TextBox txtHeaderKeyPut;
         private TextBox txtHeaderValuePut;
-        private TextBox txhHeaderKeyDelete;
+        private TextBox txtHeaderKeyDelete;
         private TextBox txtHeaderValueDelete;
         private Button btnResetHeadersGet;
         private Button btnResetHeadersPost;
