@@ -197,7 +197,7 @@ namespace APIHttpTool
             rtbResponseDelete.Text = "Click 'Send DELETE Request' to delete data.";
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             // Reset POST URL
             txtApiUrlPost.Text = "https://jsonplaceholder.typicode.com/posts";
@@ -210,7 +210,7 @@ namespace APIHttpTool
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             // Reset PUT URL
             txtApiUrlPut.Text = "https://jsonplaceholder.typicode.com/posts/1";

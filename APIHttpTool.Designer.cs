@@ -55,6 +55,14 @@
             lblStatusCodePut = new Label();
             lblStatusCodePost = new Label();
             lblStatusCodeGet = new Label();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            textBox3 = new TextBox();
+            textBox4 = new TextBox();
+            textBox5 = new TextBox();
+            textBox6 = new TextBox();
+            textBox7 = new TextBox();
+            textBox8 = new TextBox();
             SuspendLayout();
             // 
             // label1
@@ -312,12 +320,76 @@
             lblStatusCodeGet.TabIndex = 24;
             lblStatusCodeGet.Text = "Status: Not Sent";
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(878, 37);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 25;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(1002, 37);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 26;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(878, 211);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 27;
+            // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(1002, 211);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(100, 23);
+            textBox4.TabIndex = 28;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(878, 385);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(100, 23);
+            textBox5.TabIndex = 29;
+            // 
+            // textBox6
+            // 
+            textBox6.Location = new Point(1002, 385);
+            textBox6.Name = "textBox6";
+            textBox6.Size = new Size(100, 23);
+            textBox6.TabIndex = 30;
+            // 
+            // textBox7
+            // 
+            textBox7.Location = new Point(878, 562);
+            textBox7.Name = "textBox7";
+            textBox7.Size = new Size(100, 23);
+            textBox7.TabIndex = 31;
+            // 
+            // textBox8
+            // 
+            textBox8.Location = new Point(1002, 562);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new Size(100, 23);
+            textBox8.TabIndex = 32;
+            // 
             // APIHttpTool
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
-            ClientSize = new Size(989, 731);
+            ClientSize = new Size(1116, 731);
+            Controls.Add(textBox8);
+            Controls.Add(textBox7);
+            Controls.Add(textBox6);
+            Controls.Add(textBox5);
+            Controls.Add(textBox4);
+            Controls.Add(textBox3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(lblStatusCodeGet);
             Controls.Add(lblStatusCodePost);
             Controls.Add(lblStatusCodePut);
@@ -376,5 +448,13 @@
         private Label lblStatusCodePut;
         private Label lblStatusCodePost;
         private Label lblStatusCodeGet;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private TextBox textBox3;
+        private TextBox textBox4;
+        private TextBox textBox5;
+        private TextBox textBox6;
+        private TextBox textBox7;
+        private TextBox textBox8;
     }
 }
