@@ -95,6 +95,7 @@
             // btnSendGet
             // 
             btnSendGet.BackColor = Color.LightGreen;
+            btnSendGet.FlatStyle = FlatStyle.Flat;
             btnSendGet.Location = new Point(13, 113);
             btnSendGet.Name = "btnSendGet";
             btnSendGet.Size = new Size(309, 35);
@@ -106,6 +107,8 @@
             // rtbResponse1
             // 
             rtbResponse1.BackColor = SystemColors.Info;
+            rtbResponse1.BorderStyle = BorderStyle.FixedSingle;
+            rtbResponse1.Font = new Font("Courier New", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             rtbResponse1.Location = new Point(377, 38);
             rtbResponse1.Name = "rtbResponse1";
             rtbResponse1.Size = new Size(303, 142);
@@ -115,6 +118,7 @@
             // rtbResponsePost
             // 
             rtbResponsePost.BackColor = SystemColors.Info;
+            rtbResponsePost.Font = new Font("Courier New", 9.75F);
             rtbResponsePost.Location = new Point(377, 211);
             rtbResponsePost.Name = "rtbResponsePost";
             rtbResponsePost.Size = new Size(303, 142);
@@ -124,6 +128,7 @@
             // rtbResponsePut
             // 
             rtbResponsePut.BackColor = SystemColors.Info;
+            rtbResponsePut.Font = new Font("Courier New", 9.75F);
             rtbResponsePut.Location = new Point(377, 385);
             rtbResponsePut.Name = "rtbResponsePut";
             rtbResponsePut.Size = new Size(303, 142);
@@ -133,6 +138,7 @@
             // rtbResponseDelete
             // 
             rtbResponseDelete.BackColor = SystemColors.Info;
+            rtbResponseDelete.Font = new Font("Courier New", 9.75F);
             rtbResponseDelete.Location = new Point(377, 562);
             rtbResponseDelete.Name = "rtbResponseDelete";
             rtbResponseDelete.Size = new Size(303, 142);
@@ -142,6 +148,7 @@
             // btnSendPost
             // 
             btnSendPost.BackColor = Color.SkyBlue;
+            btnSendPost.FlatStyle = FlatStyle.Flat;
             btnSendPost.Location = new Point(13, 289);
             btnSendPost.Name = "btnSendPost";
             btnSendPost.Size = new Size(309, 35);
@@ -153,6 +160,7 @@
             // btnSendPut
             // 
             btnSendPut.BackColor = Color.Khaki;
+            btnSendPut.FlatStyle = FlatStyle.Flat;
             btnSendPut.Location = new Point(12, 456);
             btnSendPut.Name = "btnSendPut";
             btnSendPut.Size = new Size(309, 35);
@@ -164,6 +172,7 @@
             // btnSendDelete
             // 
             btnSendDelete.BackColor = Color.LightCoral;
+            btnSendDelete.FlatStyle = FlatStyle.Flat;
             btnSendDelete.Location = new Point(12, 638);
             btnSendDelete.Name = "btnSendDelete";
             btnSendDelete.Size = new Size(309, 35);

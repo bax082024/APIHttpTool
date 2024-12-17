@@ -64,16 +64,19 @@ namespace APIHttpTool
                     HttpResponseMessage response = await client.GetAsync(url);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponse1.Text = $"Status: {response.StatusCode}\n{responseBody}";
+                    rtbResponse1.Text = responseBody;
+
+                    // Update the Status Label
+                    lblStatusCodeGet.Text = $"Status: {response.StatusCode}";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponse1.Text = $"Error: {ex.Message}";
+                lblStatusCodeGet.Text = "Status: Error";
             }
-
-            
         }
+
 
 
 
@@ -111,16 +114,19 @@ namespace APIHttpTool
                     HttpResponseMessage response = await client.PostAsync(url, data);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponsePost.Text = $"Status: {response.StatusCode}\n{responseBody}";
+                    rtbResponsePost.Text = responseBody;
+
+                    // Update the Status Label
+                    lblStatusCodePost.Text = $"Status: {response.StatusCode}";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponsePost.Text = $"Error: {ex.Message}";
+                lblStatusCodePost.Text = "Status: Error";
             }
-
-            
         }
+
 
 
 
@@ -158,16 +164,19 @@ namespace APIHttpTool
                     HttpResponseMessage response = await client.PutAsync(url, data);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponsePut.Text = $"Status: {response.StatusCode}\n{responseBody}";
+                    rtbResponsePut.Text = responseBody;
+
+                    // Update the Status Label
+                    lblStatusCodePut.Text = $"Status: {response.StatusCode}";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponsePut.Text = $"Error: {ex.Message}";
+                lblStatusCodePut.Text = "Status: Error";
             }
-
-            
         }
+
 
 
 
@@ -198,16 +207,19 @@ namespace APIHttpTool
                     HttpResponseMessage response = await client.DeleteAsync(url);
 
                     string responseBody = await response.Content.ReadAsStringAsync();
-                    rtbResponseDelete.Text = $"Status: {response.StatusCode}\n{responseBody}";
+                    rtbResponseDelete.Text = responseBody;
+
+                    // Update the Status Label
+                    lblStatusCodeDelete.Text = $"Status: {response.StatusCode}";
                 }
             }
             catch (Exception ex)
             {
                 rtbResponseDelete.Text = $"Error: {ex.Message}";
+                lblStatusCodeDelete.Text = "Status: Error";
             }
-
-            
         }
+
 
 
 
@@ -243,8 +255,8 @@ namespace APIHttpTool
             rtbResponsePost.Text = "{\n  \"title\": \"foo\",\n  \"body\": \"bar\",\n  \"userId\": 1\n}";
 
             // PUT Example URL and Payload
-            txtApiUrlPut.Text = "https://jsonplaceholder.typicode.com/posts/1";
-            rtbResponsePut.Text = "{\n  \"id\": 1,\n  \"title\": \"updated title\",\n  \"body\": \"updated body\",\n  \"userId\": 1\n}";
+            txtApiUrlPut.Text = "https://reqres.in/api/users/2";
+            rtbResponsePut.Text = "{\n  \"name\": \"morpheus\",\n  \"job\": \"zion resident\"\n}";
 
             // DELETE Example URL
             txtApiUrlDelete.Text = "https://jsonplaceholder.typicode.com/posts/1";
@@ -279,10 +291,10 @@ namespace APIHttpTool
         private void button3_Click(object sender, EventArgs e)
         {
             // Reset PUT URL
-            txtApiUrlPut.Text = "https://jsonplaceholder.typicode.com/posts/1";
+            txtApiUrlPut.Text = "https://reqres.in/api/users/2";
 
             // Reset PUT Body (Payload)
-            rtbResponsePut.Text = "{\n  \"id\": 1,\n  \"title\": \"updated title\",\n  \"body\": \"updated body\",\n  \"userId\": 1\n}";
+            rtbResponsePut.Text = "{\n  \"name\": \"morpheus\",\n  \"job\": \"zion resident\"\n}";
 
             // Reset Status Label
             lblStatusCodePut.Text = "Status: Not Sent";
@@ -322,5 +334,8 @@ namespace APIHttpTool
             txtHeaderKeyDelete.Text = "";
             txtHeaderValueDelete.Text = "";
         }
+
+        
+
     }
 }
