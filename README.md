@@ -64,3 +64,10 @@ These tooltips make the program beginner-friendly and help users understand each
 
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Free fake API for testing.
 - [Reqres](https://reqres.in/) - Dummy API for testing POST, PUT, and DELETE requests.
+
+---
+
+## Creator 
+
+Created by **Bax**! This is a educational tool, designed to help users learn about API HTTP requests.
+
