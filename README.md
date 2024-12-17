@@ -44,6 +44,7 @@ that simplifies API testing for users who may not have prior technical experienc
 
 - **.NET Framework**: Ensure you have the .NET runtime installed.
 - **Operating System**: Windows.
+- Visual Studio
 
 ---
 
@@ -71,3 +72,17 @@ These tooltips make the program beginner-friendly and help users understand each
 
 Created by **Bax**! This is a educational tool, designed to help users learn about API HTTP requests.
 
+---
+
+## Installation
+
+1. Clone the repo https://github.com/bax082024/APIHttpTool.git
+2. cd APIHttpTool
+
+---
+
+## Contact
+
+for questions or feedback, please contact
+
+- **bax082024@gmail.com**
