@@ -37,3 +37,19 @@ that simplifies API testing for users who may not have prior technical experienc
 
 4. **Reset**:
    - Use the **Reset** buttons to clear inputs and start fresh.
+
+---
+
+## Requirements
+
+- **.NET Framework**: Ensure you have the .NET runtime installed.
+- **Operating System**: Windows.
+
+## Tooltips
+
+Hover over the **GET**, **POST**, **PUT**, or **DELETE** buttons to view simple explanations. 
+These tooltips make the program beginner-friendly and help users understand each HTTP method.
+
+## ScreenShot
+
+- [App](/Images/app.png)
