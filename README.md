@@ -52,4 +52,4 @@ These tooltips make the program beginner-friendly and help users understand each
 
 ## ScreenShot
 
-- [App](/Images/app.png)
+- ![App](/Images/app.png)
