@@ -1,86 +1,39 @@
-						
-						
-						
-						
-						
-1. GET Request
-Use this endpoint to retrieve a post.
+# Api HTTP Tool
 
-Example URL: https://jsonplaceholder.typicode.com/posts/1
-
-{
-  "userId": 1,
-  "id": 1,
-  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-  "body": "quia et suscipit suscipit recusandae consequuntur expedita et cum..."
-}
-
-2. POST Request
-This endpoint creates a new post.
-
-Example URL: https://jsonplaceholder.typicode.com/posts
-
-Example Payload (as JSON):
-{
-  "title": "foo",
-  "body": "bar",
-  "userId": 1
-}
-Response:
-
-{
-  "id": 101,
-  "title": "foo",
-  "body": "bar",
-  "userId": 1
-}
-
-3. PUT Request
-This endpoint updates an existing post.
-
-Example URL: https://jsonplaceholder.typicode.com/posts/1
-
-Example Payload (as JSON):
-{
-  "id": 1,
-  "title": "updated title",
-  "body": "updated body",
-  "userId": 1
-}
-Response:
-
-{
-  "id": 1,
-  "title": "updated title",
-  "body": "updated body",
-  "userId": 1
-}
-
-4. DELETE Request
-This endpoint deletes a post.
-
-Example URL: https://jsonplaceholder.typicode.com/posts/1
-
-Response:
-
-{} (The response is usually an empty object {} with a status code 200 OK.)
-
-
+**API HTTP Tool** is a beginner-friendly Windows Forms application designed to help users,
+interact with REST APIs using GET, POST, PUT, and DELETE requests. It is an educational tool,
+that simplifies API testing for users who may not have prior technical experience.
 
 ---
 
-Header 
+## Features
 
-2. httpbin.org (Custom Headers)
-httpbin.org is a fantastic service that echoes the headers or requests you send. This is perfect for validating if your headers are sent correctly.
+- **Send HTTP Requests**:
+  - **GET**: Fetch data from APIs.
+  - **POST**: Send new data to APIs.
+  - **PUT**: Update existing data in APIs.
+  - **DELETE**: Remove data from APIs.
+- **Status Display**: Displays the HTTP status codes (e.g., `200 OK`, `201 Created`).
+- **Custom Headers**: Add optional API headers (like `Authorization` tokens).
+- **Reset Functionality**: Reset API URLs, payloads, and headers with one click.
+- **Educational Tooltips**: Hover over each button for easy-to-understand explanations of their functionality.
+- **Gradient Design**: Visually appealing layout with shadows and gradient background.
 
-Test Endpoints:
-Headers Echo: https://httpbin.org/headers
-This will return all headers sent with your request.
+---
 
-POST Echo: https://httpbin.org/post
-Sends a POST request and echoes the request headers and body.
+## How to use
 
-Example Header:
-Key: Test-Header
-Value: Header-Test-123
+1. **Setup**:
+   - Open the application.
+   - Enter a valid API URL for GET, POST, PUT, or DELETE operations.
+
+2. **Optional**:
+   - Add API headers (Key-Value pairs) if required by the endpoint.
+   - Customize the payload for POST and PUT requests.
+
+3. **Send Requests**:
+   - Click the respective buttons (`Send GET Request`, `Send POST Request`, etc.) to interact with the API.
+   - View the response and HTTP status code in the provided fields.
+
+4. **Reset**:
+   - Use the **Reset** buttons to clear inputs and start fresh.
