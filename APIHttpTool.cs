@@ -24,16 +24,16 @@ namespace APIHttpTool
 
 
             // Set tooltip text for GET button
-            toolTip.SetToolTip(btnSendGet, "The GET method retrieves data from the server. Use this to fetch information.");
+            toolTip.SetToolTip(btnSendGet, "Forklaring:\r\nGET brukes til å hente data fra en server. Når du klikker på GET-knappen, ber programmet serveren om å sende informasjon tilbake. Dette er som å spørre etter noe du vil se, men ikke endre.\r\n\r\nEksempel:\r\nHvis du ber om en liste med brukere, sender serveren denne listen tilbake til deg.");
 
             // Set tooltip text for POST button
-            toolTip.SetToolTip(btnSendPost, "The POST method sends data to the server to create new resources.");
+            toolTip.SetToolTip(btnSendPost, "Forklaring:\r\nPOST brukes til å sende ny informasjon til en server. Når du klikker på POST-knappen, oppretter du noe nytt på serveren, som å legge til en ny bruker eller opprette en ny melding.\r\n\r\nEksempel:\r\nHvis du fyller ut et skjema og klikker \"Send\", sendes informasjonen til serveren.");
 
             // Set tooltip text for PUT button
-            toolTip.SetToolTip(btnSendPut, "The PUT method updates an existing resource on the server.");
+            toolTip.SetToolTip(btnSendPut, "Forklaring:\r\nPUT brukes til å oppdatere eksisterende informasjon på en server. Når du klikker på PUT-knappen, forteller du serveren at den skal erstatte gammel informasjon med ny informasjon.\r\n\r\nEksempel:\r\nHvis du allerede har en bruker, men vil endre brukerens navn, oppdaterer PUT-knappen dette navnet.");
 
             // Set tooltip text for DELETE button
-            toolTip.SetToolTip(btnSendDelete, "The DELETE method removes a resource from the server.");
+            toolTip.SetToolTip(btnSendDelete, "Forklaring:\r\nDELETE brukes til å slette informasjon fra en server. Når du klikker på DELETE-knappen, ber du serveren om å fjerne noe.\r\n\r\nEksempel:\r\nHvis du ikke lenger vil ha en bestemt bruker, sletter DELETE-knappen denne brukeren fra serveren.");
 
 
 
