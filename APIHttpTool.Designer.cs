@@ -62,7 +62,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(123, 68);
+            label1.Location = new Point(123, 55);
             label1.Name = "label1";
             label1.Size = new Size(65, 17);
             label1.TabIndex = 0;
@@ -71,7 +71,7 @@
             // txtApiUrl1
             // 
             txtApiUrl1.BackColor = SystemColors.Info;
-            txtApiUrl1.Location = new Point(12, 88);
+            txtApiUrl1.Location = new Point(12, 75);
             txtApiUrl1.Name = "txtApiUrl1";
             txtApiUrl1.Size = new Size(309, 23);
             txtApiUrl1.TabIndex = 1;
@@ -79,7 +79,7 @@
             // btnSendGet
             // 
             btnSendGet.BackColor = Color.LightGreen;
-            btnSendGet.Location = new Point(12, 128);
+            btnSendGet.Location = new Point(13, 113);
             btnSendGet.Name = "btnSendGet";
             btnSendGet.Size = new Size(309, 35);
             btnSendGet.TabIndex = 2;
@@ -126,7 +126,7 @@
             // btnSendPost
             // 
             btnSendPost.BackColor = Color.SkyBlue;
-            btnSendPost.Location = new Point(12, 303);
+            btnSendPost.Location = new Point(13, 289);
             btnSendPost.Name = "btnSendPost";
             btnSendPost.Size = new Size(309, 35);
             btnSendPost.TabIndex = 7;
@@ -137,7 +137,7 @@
             // btnSendPut
             // 
             btnSendPut.BackColor = Color.Khaki;
-            btnSendPut.Location = new Point(12, 479);
+            btnSendPut.Location = new Point(12, 456);
             btnSendPut.Name = "btnSendPut";
             btnSendPut.Size = new Size(309, 35);
             btnSendPut.TabIndex = 8;
@@ -148,7 +148,7 @@
             // btnSendDelete
             // 
             btnSendDelete.BackColor = Color.LightCoral;
-            btnSendDelete.Location = new Point(12, 666);
+            btnSendDelete.Location = new Point(12, 638);
             btnSendDelete.Name = "btnSendDelete";
             btnSendDelete.Size = new Size(309, 35);
             btnSendDelete.TabIndex = 9;
@@ -159,7 +159,7 @@
             // txtApiUrlPost
             // 
             txtApiUrlPost.BackColor = SystemColors.Info;
-            txtApiUrlPost.Location = new Point(12, 264);
+            txtApiUrlPost.Location = new Point(12, 251);
             txtApiUrlPost.Name = "txtApiUrlPost";
             txtApiUrlPost.Size = new Size(309, 23);
             txtApiUrlPost.TabIndex = 11;
@@ -169,7 +169,7 @@
             label2.AutoSize = true;
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label2.Location = new Point(123, 244);
+            label2.Location = new Point(123, 231);
             label2.Name = "label2";
             label2.Size = new Size(65, 17);
             label2.TabIndex = 10;
@@ -178,7 +178,7 @@
             // txtApiUrlPut
             // 
             txtApiUrlPut.BackColor = SystemColors.Info;
-            txtApiUrlPut.Location = new Point(12, 430);
+            txtApiUrlPut.Location = new Point(12, 417);
             txtApiUrlPut.Name = "txtApiUrlPut";
             txtApiUrlPut.Size = new Size(309, 23);
             txtApiUrlPut.TabIndex = 13;
@@ -188,7 +188,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label3.Location = new Point(123, 410);
+            label3.Location = new Point(123, 397);
             label3.Name = "label3";
             label3.Size = new Size(65, 17);
             label3.TabIndex = 12;
@@ -197,7 +197,7 @@
             // txtApiUrlDelete
             // 
             txtApiUrlDelete.BackColor = SystemColors.Info;
-            txtApiUrlDelete.Location = new Point(12, 614);
+            txtApiUrlDelete.Location = new Point(12, 600);
             txtApiUrlDelete.Name = "txtApiUrlDelete";
             txtApiUrlDelete.Size = new Size(309, 23);
             txtApiUrlDelete.TabIndex = 15;
@@ -207,7 +207,7 @@
             label4.AutoSize = true;
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            label4.Location = new Point(123, 594);
+            label4.Location = new Point(123, 580);
             label4.Name = "label4";
             label4.Size = new Size(65, 17);
             label4.TabIndex = 14;
