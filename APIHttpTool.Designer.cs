@@ -442,6 +442,7 @@
             // lblHeader
             // 
             lblHeader.AutoSize = true;
+            lblHeader.BackColor = Color.Transparent;
             lblHeader.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblHeader.Location = new Point(834, 18);
             lblHeader.Name = "lblHeader";
@@ -452,6 +453,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(753, 55);
             label5.Name = "label5";
@@ -462,6 +464,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.Location = new Point(962, 57);
             label6.Name = "label6";
