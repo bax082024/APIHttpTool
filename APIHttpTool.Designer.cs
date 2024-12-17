@@ -55,14 +55,21 @@
             lblStatusCodePut = new Label();
             lblStatusCodePost = new Label();
             lblStatusCodeGet = new Label();
-            textBox1 = new TextBox();
+            txhHeaderKeyGet = new TextBox();
             textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            txhHeaderKeyPost = new TextBox();
             textBox4 = new TextBox();
-            textBox5 = new TextBox();
+            txhHeaderKeyPut = new TextBox();
             textBox6 = new TextBox();
-            textBox7 = new TextBox();
+            txhHeaderKeyDelete = new TextBox();
             textBox8 = new TextBox();
+            button5 = new Button();
+            button6 = new Button();
+            button7 = new Button();
+            button8 = new Button();
+            lblHeader = new Label();
+            label5 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -100,7 +107,7 @@
             rtbResponse1.BackColor = SystemColors.Info;
             rtbResponse1.Location = new Point(377, 38);
             rtbResponse1.Name = "rtbResponse1";
-            rtbResponse1.Size = new Size(484, 142);
+            rtbResponse1.Size = new Size(303, 142);
             rtbResponse1.TabIndex = 3;
             rtbResponse1.Text = "";
             // 
@@ -109,7 +116,7 @@
             rtbResponsePost.BackColor = SystemColors.Info;
             rtbResponsePost.Location = new Point(377, 211);
             rtbResponsePost.Name = "rtbResponsePost";
-            rtbResponsePost.Size = new Size(484, 142);
+            rtbResponsePost.Size = new Size(303, 142);
             rtbResponsePost.TabIndex = 4;
             rtbResponsePost.Text = "";
             // 
@@ -118,7 +125,7 @@
             rtbResponsePut.BackColor = SystemColors.Info;
             rtbResponsePut.Location = new Point(377, 385);
             rtbResponsePut.Name = "rtbResponsePut";
-            rtbResponsePut.Size = new Size(484, 142);
+            rtbResponsePut.Size = new Size(303, 142);
             rtbResponsePut.TabIndex = 5;
             rtbResponsePut.Text = "";
             // 
@@ -127,7 +134,7 @@
             rtbResponseDelete.BackColor = SystemColors.Info;
             rtbResponseDelete.Location = new Point(377, 562);
             rtbResponseDelete.Name = "rtbResponseDelete";
-            rtbResponseDelete.Size = new Size(484, 142);
+            rtbResponseDelete.Size = new Size(303, 142);
             rtbResponseDelete.TabIndex = 6;
             rtbResponseDelete.Text = "";
             // 
@@ -233,7 +240,7 @@
             button2.BackColor = Color.Silver;
             button2.ImageIndex = 0;
             button2.ImageList = imageList1;
-            button2.Location = new Point(327, 430);
+            button2.Location = new Point(328, 264);
             button2.Name = "button2";
             button2.Size = new Size(43, 37);
             button2.TabIndex = 17;
@@ -245,7 +252,7 @@
             button1.BackColor = Color.Silver;
             button1.ImageIndex = 0;
             button1.ImageList = imageList1;
-            button1.Location = new Point(328, 264);
+            button1.Location = new Point(328, 88);
             button1.Name = "button1";
             button1.Size = new Size(43, 37);
             button1.TabIndex = 18;
@@ -257,7 +264,7 @@
             button3.BackColor = Color.Silver;
             button3.ImageIndex = 0;
             button3.ImageList = imageList1;
-            button3.Location = new Point(327, 614);
+            button3.Location = new Point(328, 430);
             button3.Name = "button3";
             button3.Size = new Size(43, 37);
             button3.TabIndex = 19;
@@ -269,7 +276,7 @@
             button4.BackColor = Color.Silver;
             button4.ImageIndex = 0;
             button4.ImageList = imageList1;
-            button4.Location = new Point(327, 88);
+            button4.Location = new Point(328, 614);
             button4.Name = "button4";
             button4.Size = new Size(43, 37);
             button4.TabIndex = 20;
@@ -320,76 +327,147 @@
             lblStatusCodeGet.TabIndex = 24;
             lblStatusCodeGet.Text = "Status: Not Sent";
             // 
-            // textBox1
+            // txhHeaderKeyGet
             // 
-            textBox1.Location = new Point(878, 37);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 25;
+            txhHeaderKeyGet.Location = new Point(697, 88);
+            txhHeaderKeyGet.Name = "txhHeaderKeyGet";
+            txhHeaderKeyGet.Size = new Size(150, 23);
+            txhHeaderKeyGet.TabIndex = 25;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(1002, 37);
+            textBox2.Location = new Point(866, 88);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
+            textBox2.Size = new Size(250, 23);
             textBox2.TabIndex = 26;
             // 
-            // textBox3
+            // txhHeaderKeyPost
             // 
-            textBox3.Location = new Point(878, 211);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 27;
+            txhHeaderKeyPost.Location = new Point(697, 264);
+            txhHeaderKeyPost.Name = "txhHeaderKeyPost";
+            txhHeaderKeyPost.Size = new Size(150, 23);
+            txhHeaderKeyPost.TabIndex = 27;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(1002, 211);
+            textBox4.Location = new Point(866, 264);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
+            textBox4.Size = new Size(250, 23);
             textBox4.TabIndex = 28;
             // 
-            // textBox5
+            // txhHeaderKeyPut
             // 
-            textBox5.Location = new Point(878, 385);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 29;
+            txhHeaderKeyPut.Location = new Point(697, 444);
+            txhHeaderKeyPut.Name = "txhHeaderKeyPut";
+            txhHeaderKeyPut.Size = new Size(150, 23);
+            txhHeaderKeyPut.TabIndex = 29;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(1002, 385);
+            textBox6.Location = new Point(866, 444);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
+            textBox6.Size = new Size(250, 23);
             textBox6.TabIndex = 30;
             // 
-            // textBox7
+            // txhHeaderKeyDelete
             // 
-            textBox7.Location = new Point(878, 562);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(100, 23);
-            textBox7.TabIndex = 31;
+            txhHeaderKeyDelete.Location = new Point(697, 628);
+            txhHeaderKeyDelete.Name = "txhHeaderKeyDelete";
+            txhHeaderKeyDelete.Size = new Size(150, 23);
+            txhHeaderKeyDelete.TabIndex = 31;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(1002, 562);
+            textBox8.Location = new Point(866, 628);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(100, 23);
+            textBox8.Size = new Size(250, 23);
             textBox8.TabIndex = 32;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(866, 125);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 33;
+            button5.Text = "button5";
+            button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(866, 301);
+            button6.Name = "button6";
+            button6.Size = new Size(75, 23);
+            button6.TabIndex = 34;
+            button6.Text = "button6";
+            button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            button7.Location = new Point(866, 484);
+            button7.Name = "button7";
+            button7.Size = new Size(75, 23);
+            button7.TabIndex = 35;
+            button7.Text = "button7";
+            button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(866, 667);
+            button8.Name = "button8";
+            button8.Size = new Size(75, 23);
+            button8.TabIndex = 36;
+            button8.Text = "button8";
+            button8.UseVisualStyleBackColor = true;
+            // 
+            // lblHeader
+            // 
+            lblHeader.AutoSize = true;
+            lblHeader.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblHeader.Location = new Point(834, 18);
+            lblHeader.Name = "lblHeader";
+            lblHeader.Size = new Size(126, 17);
+            lblHeader.TabIndex = 37;
+            lblHeader.Text = "Headers (Optional)";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(737, 56);
+            label5.Name = "label5";
+            label5.Size = new Size(26, 15);
+            label5.TabIndex = 38;
+            label5.Text = "Key";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(931, 56);
+            label6.Name = "label6";
+            label6.Size = new Size(38, 15);
+            label6.TabIndex = 39;
+            label6.Text = "label6";
             // 
             // APIHttpTool
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DimGray;
-            ClientSize = new Size(1116, 731);
+            ClientSize = new Size(1138, 731);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(lblHeader);
+            Controls.Add(button8);
+            Controls.Add(button7);
+            Controls.Add(button6);
+            Controls.Add(button5);
             Controls.Add(textBox8);
-            Controls.Add(textBox7);
+            Controls.Add(txhHeaderKeyDelete);
             Controls.Add(textBox6);
-            Controls.Add(textBox5);
+            Controls.Add(txhHeaderKeyPut);
             Controls.Add(textBox4);
-            Controls.Add(textBox3);
+            Controls.Add(txhHeaderKeyPost);
             Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txhHeaderKeyGet);
             Controls.Add(lblStatusCodeGet);
             Controls.Add(lblStatusCodePost);
             Controls.Add(lblStatusCodePut);
@@ -448,13 +526,20 @@
         private Label lblStatusCodePut;
         private Label lblStatusCodePost;
         private Label lblStatusCodeGet;
-        private TextBox textBox1;
+        private TextBox txhHeaderKeyGet;
         private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox txhHeaderKeyPost;
         private TextBox textBox4;
-        private TextBox textBox5;
+        private TextBox txhHeaderKeyPut;
         private TextBox textBox6;
-        private TextBox textBox7;
+        private TextBox txhHeaderKeyDelete;
         private TextBox textBox8;
+        private Button button5;
+        private Button button6;
+        private Button button7;
+        private Button button8;
+        private Label lblHeader;
+        private Label label5;
+        private Label label6;
     }
 }
