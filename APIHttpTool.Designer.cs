@@ -329,6 +329,7 @@
             // 
             // txhHeaderKeyGet
             // 
+            txhHeaderKeyGet.BackColor = SystemColors.Info;
             txhHeaderKeyGet.Location = new Point(697, 88);
             txhHeaderKeyGet.Name = "txhHeaderKeyGet";
             txhHeaderKeyGet.Size = new Size(150, 23);
@@ -336,6 +337,7 @@
             // 
             // txtHeaderValueGet
             // 
+            txtHeaderValueGet.BackColor = SystemColors.Info;
             txtHeaderValueGet.Location = new Point(866, 88);
             txtHeaderValueGet.Name = "txtHeaderValueGet";
             txtHeaderValueGet.Size = new Size(250, 23);
@@ -343,6 +345,7 @@
             // 
             // txhHeaderKeyPost
             // 
+            txhHeaderKeyPost.BackColor = SystemColors.Info;
             txhHeaderKeyPost.Location = new Point(697, 264);
             txhHeaderKeyPost.Name = "txhHeaderKeyPost";
             txhHeaderKeyPost.Size = new Size(150, 23);
@@ -350,6 +353,7 @@
             // 
             // txtHeaderValuePost
             // 
+            txtHeaderValuePost.BackColor = SystemColors.Info;
             txtHeaderValuePost.Location = new Point(866, 264);
             txtHeaderValuePost.Name = "txtHeaderValuePost";
             txtHeaderValuePost.Size = new Size(250, 23);
@@ -357,6 +361,7 @@
             // 
             // txhHeaderKeyPut
             // 
+            txhHeaderKeyPut.BackColor = SystemColors.Info;
             txhHeaderKeyPut.Location = new Point(697, 444);
             txhHeaderKeyPut.Name = "txhHeaderKeyPut";
             txhHeaderKeyPut.Size = new Size(150, 23);
@@ -364,6 +369,7 @@
             // 
             // txtHeaderValuePut
             // 
+            txtHeaderValuePut.BackColor = SystemColors.Info;
             txtHeaderValuePut.Location = new Point(866, 444);
             txtHeaderValuePut.Name = "txtHeaderValuePut";
             txtHeaderValuePut.Size = new Size(250, 23);
@@ -371,6 +377,7 @@
             // 
             // txhHeaderKeyDelete
             // 
+            txhHeaderKeyDelete.BackColor = SystemColors.Info;
             txhHeaderKeyDelete.Location = new Point(697, 628);
             txhHeaderKeyDelete.Name = "txhHeaderKeyDelete";
             txhHeaderKeyDelete.Size = new Size(150, 23);
@@ -378,6 +385,7 @@
             // 
             // txtHeaderValueDelete
             // 
+            txtHeaderValueDelete.BackColor = SystemColors.Info;
             txtHeaderValueDelete.Location = new Point(866, 628);
             txtHeaderValueDelete.Name = "txtHeaderValueDelete";
             txtHeaderValueDelete.Size = new Size(250, 23);
@@ -385,43 +393,47 @@
             // 
             // btnResetHeadersGet
             // 
+            btnResetHeadersGet.BackColor = Color.Silver;
             btnResetHeadersGet.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnResetHeadersGet.Location = new Point(866, 125);
             btnResetHeadersGet.Name = "btnResetHeadersGet";
             btnResetHeadersGet.Size = new Size(75, 23);
             btnResetHeadersGet.TabIndex = 33;
             btnResetHeadersGet.Text = "Reset";
-            btnResetHeadersGet.UseVisualStyleBackColor = true;
+            btnResetHeadersGet.UseVisualStyleBackColor = false;
             // 
             // btnResetHeadersPost
             // 
+            btnResetHeadersPost.BackColor = Color.Silver;
             btnResetHeadersPost.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnResetHeadersPost.Location = new Point(866, 301);
             btnResetHeadersPost.Name = "btnResetHeadersPost";
             btnResetHeadersPost.Size = new Size(75, 23);
             btnResetHeadersPost.TabIndex = 34;
             btnResetHeadersPost.Text = "Reset";
-            btnResetHeadersPost.UseVisualStyleBackColor = true;
+            btnResetHeadersPost.UseVisualStyleBackColor = false;
             // 
             // btnResetHeadersPut
             // 
+            btnResetHeadersPut.BackColor = Color.Silver;
             btnResetHeadersPut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnResetHeadersPut.Location = new Point(866, 484);
             btnResetHeadersPut.Name = "btnResetHeadersPut";
             btnResetHeadersPut.Size = new Size(75, 23);
             btnResetHeadersPut.TabIndex = 35;
             btnResetHeadersPut.Text = "Reset";
-            btnResetHeadersPut.UseVisualStyleBackColor = true;
+            btnResetHeadersPut.UseVisualStyleBackColor = false;
             // 
             // btnResetHeadersDelete
             // 
+            btnResetHeadersDelete.BackColor = Color.Silver;
             btnResetHeadersDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnResetHeadersDelete.Location = new Point(866, 667);
             btnResetHeadersDelete.Name = "btnResetHeadersDelete";
             btnResetHeadersDelete.Size = new Size(75, 23);
             btnResetHeadersDelete.TabIndex = 36;
             btnResetHeadersDelete.Text = "Reset";
-            btnResetHeadersDelete.UseVisualStyleBackColor = true;
+            btnResetHeadersDelete.UseVisualStyleBackColor = false;
             // 
             // lblHeader
             // 
