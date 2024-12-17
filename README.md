@@ -45,11 +45,22 @@ that simplifies API testing for users who may not have prior technical experienc
 - **.NET Framework**: Ensure you have the .NET runtime installed.
 - **Operating System**: Windows.
 
+---
+
 ## Tooltips
 
 Hover over the **GET**, **POST**, **PUT**, or **DELETE** buttons to view simple explanations. 
 These tooltips make the program beginner-friendly and help users understand each HTTP method.
 
+---
+
 ## ScreenShot
 
 - ![App](/Images/app.png)
+
+---
+
+## Resources 
+
+- [JSONPlaceholder](https://jsonplaceholder.typicode.com/) - Free fake API for testing.
+- [Reqres](https://reqres.in/) - Dummy API for testing POST, PUT, and DELETE requests.
