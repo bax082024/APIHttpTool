@@ -63,13 +63,13 @@
             txtHeaderValuePut = new TextBox();
             txtHeaderKeyDelete = new TextBox();
             txtHeaderValueDelete = new TextBox();
-            btnResetHeadersGet = new Button();
-            btnResetHeadersPost = new Button();
-            btnResetHeadersPut = new Button();
             btnResetHeadersDelete = new Button();
             lblHeader = new Label();
             label5 = new Label();
             label6 = new Label();
+            btnResetHeadersGet = new Button();
+            btnResetHeadersPost = new Button();
+            btnResetHeadersPut = new Button();
             SuspendLayout();
             // 
             // label1
@@ -391,42 +391,6 @@
             txtHeaderValueDelete.Size = new Size(250, 23);
             txtHeaderValueDelete.TabIndex = 32;
             // 
-            // btnResetHeadersGet
-            // 
-            btnResetHeadersGet.BackColor = Color.Silver;
-            btnResetHeadersGet.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnResetHeadersGet.Location = new Point(866, 125);
-            btnResetHeadersGet.Name = "btnResetHeadersGet";
-            btnResetHeadersGet.Size = new Size(75, 23);
-            btnResetHeadersGet.TabIndex = 33;
-            btnResetHeadersGet.Text = "Reset";
-            btnResetHeadersGet.UseVisualStyleBackColor = false;
-            btnResetHeadersGet.Click += btnResetHeadersGet_Click;
-            // 
-            // btnResetHeadersPost
-            // 
-            btnResetHeadersPost.BackColor = Color.Silver;
-            btnResetHeadersPost.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnResetHeadersPost.Location = new Point(866, 301);
-            btnResetHeadersPost.Name = "btnResetHeadersPost";
-            btnResetHeadersPost.Size = new Size(75, 23);
-            btnResetHeadersPost.TabIndex = 34;
-            btnResetHeadersPost.Text = "Reset";
-            btnResetHeadersPost.UseVisualStyleBackColor = false;
-            btnResetHeadersPost.Click += btnResetHeadersPost_Click;
-            // 
-            // btnResetHeadersPut
-            // 
-            btnResetHeadersPut.BackColor = Color.Silver;
-            btnResetHeadersPut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnResetHeadersPut.Location = new Point(866, 484);
-            btnResetHeadersPut.Name = "btnResetHeadersPut";
-            btnResetHeadersPut.Size = new Size(75, 23);
-            btnResetHeadersPut.TabIndex = 35;
-            btnResetHeadersPut.Text = "Reset";
-            btnResetHeadersPut.UseVisualStyleBackColor = false;
-            btnResetHeadersPut.Click += btnResetHeadersPut_Click;
-            // 
             // btnResetHeadersDelete
             // 
             btnResetHeadersDelete.BackColor = Color.Silver;
@@ -471,6 +435,43 @@
             label6.Size = new Size(64, 17);
             label6.TabIndex = 39;
             label6.Text = "Header : ";
+            // 
+            // btnResetHeadersGet
+            // 
+            btnResetHeadersGet.BackColor = Color.Silver;
+            btnResetHeadersGet.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResetHeadersGet.ImageList = imageList1;
+            btnResetHeadersGet.Location = new Point(866, 125);
+            btnResetHeadersGet.Name = "btnResetHeadersGet";
+            btnResetHeadersGet.Size = new Size(75, 23);
+            btnResetHeadersGet.TabIndex = 33;
+            btnResetHeadersGet.Text = "Reset";
+            btnResetHeadersGet.UseVisualStyleBackColor = false;
+            btnResetHeadersGet.Click += btnResetHeadersGet_Click;
+            // 
+            // btnResetHeadersPost
+            // 
+            btnResetHeadersPost.BackColor = Color.Silver;
+            btnResetHeadersPost.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResetHeadersPost.Location = new Point(866, 301);
+            btnResetHeadersPost.Name = "btnResetHeadersPost";
+            btnResetHeadersPost.Size = new Size(75, 23);
+            btnResetHeadersPost.TabIndex = 34;
+            btnResetHeadersPost.Text = "Reset";
+            btnResetHeadersPost.UseVisualStyleBackColor = false;
+            btnResetHeadersPost.Click += btnResetHeadersPost_Click;
+            // 
+            // btnResetHeadersPut
+            // 
+            btnResetHeadersPut.BackColor = Color.Silver;
+            btnResetHeadersPut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResetHeadersPut.Location = new Point(866, 484);
+            btnResetHeadersPut.Name = "btnResetHeadersPut";
+            btnResetHeadersPut.Size = new Size(75, 23);
+            btnResetHeadersPut.TabIndex = 35;
+            btnResetHeadersPut.Text = "Reset";
+            btnResetHeadersPut.UseVisualStyleBackColor = false;
+            btnResetHeadersPut.Click += btnResetHeadersPut_Click;
             // 
             // APIHttpTool
             // 
@@ -559,12 +560,12 @@
         private TextBox txtHeaderValuePut;
         private TextBox txtHeaderKeyDelete;
         private TextBox txtHeaderValueDelete;
-        private Button btnResetHeadersGet;
-        private Button btnResetHeadersPost;
-        private Button btnResetHeadersPut;
         private Button btnResetHeadersDelete;
         private Label lblHeader;
         private Label label5;
         private Label label6;
+        private Button btnResetHeadersGet;
+        private Button btnResetHeadersPost;
+        private Button btnResetHeadersPut;
     }
 }
