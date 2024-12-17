@@ -70,6 +70,7 @@
             btnResetHeadersGet = new Button();
             btnResetHeadersPost = new Button();
             btnResetHeadersPut = new Button();
+            toolTip1 = new ToolTip(components);
             SuspendLayout();
             // 
             // label1
@@ -567,5 +568,6 @@
         private Button btnResetHeadersGet;
         private Button btnResetHeadersPost;
         private Button btnResetHeadersPut;
+        private ToolTip toolTip1;
     }
 }

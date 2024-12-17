@@ -4,14 +4,39 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace APIHttpTool
 {
     public partial class APIHttpTool : Form
     {
+        
+
         public APIHttpTool()
         {
             InitializeComponent();
+
+
+
+            // Create a new ToolTip instance
+            System.Windows.Forms.ToolTip toolTip = new System.Windows.Forms.ToolTip();
+
+
+
+            // Set tooltip text for GET button
+            toolTip.SetToolTip(btnSendGet, "The GET method retrieves data from the server. Use this to fetch information.");
+
+            // Set tooltip text for POST button
+            toolTip.SetToolTip(btnSendPost, "The POST method sends data to the server to create new resources.");
+
+            // Set tooltip text for PUT button
+            toolTip.SetToolTip(btnSendPut, "The PUT method updates an existing resource on the server.");
+
+            // Set tooltip text for DELETE button
+            toolTip.SetToolTip(btnSendDelete, "The DELETE method removes a resource from the server.");
+
+
+
         }
 
         // GET Request
@@ -46,6 +71,8 @@ namespace APIHttpTool
             {
                 rtbResponse1.Text = $"Error: {ex.Message}";
             }
+
+            
         }
 
 
@@ -91,6 +118,8 @@ namespace APIHttpTool
             {
                 rtbResponsePost.Text = $"Error: {ex.Message}";
             }
+
+            
         }
 
 
@@ -136,6 +165,8 @@ namespace APIHttpTool
             {
                 rtbResponsePut.Text = $"Error: {ex.Message}";
             }
+
+            
         }
 
 
@@ -174,6 +205,8 @@ namespace APIHttpTool
             {
                 rtbResponseDelete.Text = $"Error: {ex.Message}";
             }
+
+            
         }
 
 
