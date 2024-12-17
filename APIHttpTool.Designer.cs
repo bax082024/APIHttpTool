@@ -56,13 +56,13 @@
             lblStatusCodePost = new Label();
             lblStatusCodeGet = new Label();
             txhHeaderKeyGet = new TextBox();
-            textBox2 = new TextBox();
+            txtHeaderValueGet = new TextBox();
             txhHeaderKeyPost = new TextBox();
-            textBox4 = new TextBox();
+            txtHeaderValuePost = new TextBox();
             txhHeaderKeyPut = new TextBox();
-            textBox6 = new TextBox();
+            txtHeaderValuePut = new TextBox();
             txhHeaderKeyDelete = new TextBox();
-            textBox8 = new TextBox();
+            txtHeaderValueDelete = new TextBox();
             btnResetHeadersGet = new Button();
             btnResetHeadersPost = new Button();
             btnResetHeadersPut = new Button();
@@ -334,12 +334,12 @@
             txhHeaderKeyGet.Size = new Size(150, 23);
             txhHeaderKeyGet.TabIndex = 25;
             // 
-            // textBox2
+            // txtHeaderValueGet
             // 
-            textBox2.Location = new Point(866, 88);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 23);
-            textBox2.TabIndex = 26;
+            txtHeaderValueGet.Location = new Point(866, 88);
+            txtHeaderValueGet.Name = "txtHeaderValueGet";
+            txtHeaderValueGet.Size = new Size(250, 23);
+            txtHeaderValueGet.TabIndex = 26;
             // 
             // txhHeaderKeyPost
             // 
@@ -348,12 +348,12 @@
             txhHeaderKeyPost.Size = new Size(150, 23);
             txhHeaderKeyPost.TabIndex = 27;
             // 
-            // textBox4
+            // txtHeaderValuePost
             // 
-            textBox4.Location = new Point(866, 264);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(250, 23);
-            textBox4.TabIndex = 28;
+            txtHeaderValuePost.Location = new Point(866, 264);
+            txtHeaderValuePost.Name = "txtHeaderValuePost";
+            txtHeaderValuePost.Size = new Size(250, 23);
+            txtHeaderValuePost.TabIndex = 28;
             // 
             // txhHeaderKeyPut
             // 
@@ -362,12 +362,12 @@
             txhHeaderKeyPut.Size = new Size(150, 23);
             txhHeaderKeyPut.TabIndex = 29;
             // 
-            // textBox6
+            // txtHeaderValuePut
             // 
-            textBox6.Location = new Point(866, 444);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(250, 23);
-            textBox6.TabIndex = 30;
+            txtHeaderValuePut.Location = new Point(866, 444);
+            txtHeaderValuePut.Name = "txtHeaderValuePut";
+            txtHeaderValuePut.Size = new Size(250, 23);
+            txtHeaderValuePut.TabIndex = 30;
             // 
             // txhHeaderKeyDelete
             // 
@@ -376,12 +376,12 @@
             txhHeaderKeyDelete.Size = new Size(150, 23);
             txhHeaderKeyDelete.TabIndex = 31;
             // 
-            // textBox8
+            // txtHeaderValueDelete
             // 
-            textBox8.Location = new Point(866, 628);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(250, 23);
-            textBox8.TabIndex = 32;
+            txtHeaderValueDelete.Location = new Point(866, 628);
+            txtHeaderValueDelete.Name = "txtHeaderValueDelete";
+            txtHeaderValueDelete.Size = new Size(250, 23);
+            txtHeaderValueDelete.TabIndex = 32;
             // 
             // btnResetHeadersGet
             // 
@@ -466,13 +466,13 @@
             Controls.Add(btnResetHeadersPut);
             Controls.Add(btnResetHeadersPost);
             Controls.Add(btnResetHeadersGet);
-            Controls.Add(textBox8);
+            Controls.Add(txtHeaderValueDelete);
             Controls.Add(txhHeaderKeyDelete);
-            Controls.Add(textBox6);
+            Controls.Add(txtHeaderValuePut);
             Controls.Add(txhHeaderKeyPut);
-            Controls.Add(textBox4);
+            Controls.Add(txtHeaderValuePost);
             Controls.Add(txhHeaderKeyPost);
-            Controls.Add(textBox2);
+            Controls.Add(txtHeaderValueGet);
             Controls.Add(txhHeaderKeyGet);
             Controls.Add(lblStatusCodeGet);
             Controls.Add(lblStatusCodePost);
@@ -533,13 +533,13 @@
         private Label lblStatusCodePost;
         private Label lblStatusCodeGet;
         private TextBox txhHeaderKeyGet;
-        private TextBox textBox2;
+        private TextBox txtHeaderValueGet;
         private TextBox txhHeaderKeyPost;
-        private TextBox textBox4;
+        private TextBox txtHeaderValuePost;
         private TextBox txhHeaderKeyPut;
-        private TextBox textBox6;
+        private TextBox txtHeaderValuePut;
         private TextBox txhHeaderKeyDelete;
-        private TextBox textBox8;
+        private TextBox txtHeaderValueDelete;
         private Button btnResetHeadersGet;
         private Button btnResetHeadersPost;
         private Button btnResetHeadersPut;
