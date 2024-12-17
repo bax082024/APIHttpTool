@@ -63,10 +63,10 @@
             textBox6 = new TextBox();
             txhHeaderKeyDelete = new TextBox();
             textBox8 = new TextBox();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
+            btnResetHeadersGet = new Button();
+            btnResetHeadersPost = new Button();
+            btnResetHeadersPut = new Button();
+            btnResetHeadersDelete = new Button();
             lblHeader = new Label();
             label5 = new Label();
             label6 = new Label();
@@ -383,41 +383,45 @@
             textBox8.Size = new Size(250, 23);
             textBox8.TabIndex = 32;
             // 
-            // button5
+            // btnResetHeadersGet
             // 
-            button5.Location = new Point(866, 125);
-            button5.Name = "button5";
-            button5.Size = new Size(75, 23);
-            button5.TabIndex = 33;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
+            btnResetHeadersGet.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResetHeadersGet.Location = new Point(866, 125);
+            btnResetHeadersGet.Name = "btnResetHeadersGet";
+            btnResetHeadersGet.Size = new Size(75, 23);
+            btnResetHeadersGet.TabIndex = 33;
+            btnResetHeadersGet.Text = "Reset";
+            btnResetHeadersGet.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnResetHeadersPost
             // 
-            button6.Location = new Point(866, 301);
-            button6.Name = "button6";
-            button6.Size = new Size(75, 23);
-            button6.TabIndex = 34;
-            button6.Text = "button6";
-            button6.UseVisualStyleBackColor = true;
+            btnResetHeadersPost.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResetHeadersPost.Location = new Point(866, 301);
+            btnResetHeadersPost.Name = "btnResetHeadersPost";
+            btnResetHeadersPost.Size = new Size(75, 23);
+            btnResetHeadersPost.TabIndex = 34;
+            btnResetHeadersPost.Text = "Reset";
+            btnResetHeadersPost.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnResetHeadersPut
             // 
-            button7.Location = new Point(866, 484);
-            button7.Name = "button7";
-            button7.Size = new Size(75, 23);
-            button7.TabIndex = 35;
-            button7.Text = "button7";
-            button7.UseVisualStyleBackColor = true;
+            btnResetHeadersPut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResetHeadersPut.Location = new Point(866, 484);
+            btnResetHeadersPut.Name = "btnResetHeadersPut";
+            btnResetHeadersPut.Size = new Size(75, 23);
+            btnResetHeadersPut.TabIndex = 35;
+            btnResetHeadersPut.Text = "Reset";
+            btnResetHeadersPut.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnResetHeadersDelete
             // 
-            button8.Location = new Point(866, 667);
-            button8.Name = "button8";
-            button8.Size = new Size(75, 23);
-            button8.TabIndex = 36;
-            button8.Text = "button8";
-            button8.UseVisualStyleBackColor = true;
+            btnResetHeadersDelete.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnResetHeadersDelete.Location = new Point(866, 667);
+            btnResetHeadersDelete.Name = "btnResetHeadersDelete";
+            btnResetHeadersDelete.Size = new Size(75, 23);
+            btnResetHeadersDelete.TabIndex = 36;
+            btnResetHeadersDelete.Text = "Reset";
+            btnResetHeadersDelete.UseVisualStyleBackColor = true;
             // 
             // lblHeader
             // 
@@ -432,20 +436,22 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(737, 56);
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(753, 55);
             label5.Name = "label5";
-            label5.Size = new Size(26, 15);
+            label5.Size = new Size(38, 17);
             label5.TabIndex = 38;
-            label5.Text = "Key";
+            label5.Text = "Key :";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(931, 56);
+            label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(962, 57);
             label6.Name = "label6";
-            label6.Size = new Size(38, 15);
+            label6.Size = new Size(64, 17);
             label6.TabIndex = 39;
-            label6.Text = "label6";
+            label6.Text = "Header : ";
             // 
             // APIHttpTool
             // 
@@ -456,10 +462,10 @@
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(lblHeader);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
+            Controls.Add(btnResetHeadersDelete);
+            Controls.Add(btnResetHeadersPut);
+            Controls.Add(btnResetHeadersPost);
+            Controls.Add(btnResetHeadersGet);
             Controls.Add(textBox8);
             Controls.Add(txhHeaderKeyDelete);
             Controls.Add(textBox6);
@@ -534,10 +540,10 @@
         private TextBox textBox6;
         private TextBox txhHeaderKeyDelete;
         private TextBox textBox8;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
+        private Button btnResetHeadersGet;
+        private Button btnResetHeadersPost;
+        private Button btnResetHeadersPut;
+        private Button btnResetHeadersDelete;
         private Label lblHeader;
         private Label label5;
         private Label label6;
