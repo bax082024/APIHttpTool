@@ -77,9 +77,6 @@ namespace APIHttpTool
             }
         }
 
-
-
-
         // POST Request
         private async void btnSendPost_Click(object sender, EventArgs e)
         {
@@ -126,9 +123,6 @@ namespace APIHttpTool
                 lblStatusCodePost.Text = "Status: Error";
             }
         }
-
-
-
 
         // PUT Request
         private async void btnSendPut_Click(object sender, EventArgs e)
@@ -177,11 +171,6 @@ namespace APIHttpTool
             }
         }
 
-
-
-
-
-
         // DELETE Request
         private async void btnSendDelete_Click(object sender, EventArgs e)
         {
@@ -220,9 +209,6 @@ namespace APIHttpTool
             }
         }
 
-
-
-
         // Function to make the background change between two colors
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -241,8 +227,6 @@ namespace APIHttpTool
                 e.Graphics.FillRectangle(brush, gradientRectangle);
             }
         }
-
-
 
         private void APIHttpTool_Load_1(object sender, EventArgs e)
         {

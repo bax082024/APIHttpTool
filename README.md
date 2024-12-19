@@ -86,3 +86,5 @@ Created by **Bax**! This is a educational tool, designed to help users learn abo
 for questions or feedback, please contact
 
 - **bax082024@gmail.com**
+
+---
